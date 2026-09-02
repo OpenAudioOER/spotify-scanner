@@ -3,64 +3,84 @@
     "name": "American Government 3e",
     "expected_episodes": [
       {
-        "id": "3OKzW22iXPb2oklS2d1cMl",
-        "title": "Trailer",
-        "spotify_url": "https://open.spotify.com/episode/3OKzW22iXPb2oklS2d1cMl"
-      },
-      {
         "id": "3Nbuw8ZeBoS8Dq8lGvbj4p",
-        "title": "Chapter 1 - American Government and Civic Engagement",
+        "title": "Chapter 1: The Constitution and Its Origins",
         "spotify_url": "https://open.spotify.com/episode/3Nbuw8ZeBoS8Dq8lGvbj4p"
       },
       {
         "id": "2LboVLpaeko7geJAe7dRYI",
-        "title": "Chapter 2 - The Constitution and Its Origins",
+        "title": "Chapter 2: American Federalism",
         "spotify_url": "https://open.spotify.com/episode/2LboVLpaeko7geJAe7dRYI"
       },
       {
         "id": "1fa0wi29tNt62pcfIcaA5D",
-        "title": "Chapter 3 - American Federalism",
+        "title": "Chapter 3: Civil Liberties",
         "spotify_url": "https://open.spotify.com/episode/1fa0wi29tNt62pcfIcaA5D"
       },
       {
         "id": "4Z21MMTezh3X4EMhDfETje",
-        "title": "Chapter 4 - Civil Liberties",
+        "title": "Chapter 4: Civil Rights",
         "spotify_url": "https://open.spotify.com/episode/4Z21MMTezh3X4EMhDfETje"
       },
       {
         "id": "1aORzvdyPcTPflaRU45Chr",
-        "title": "Chapter 5 - Civil Rights",
+        "title": "Chapter 5: The Politics of Public Opinion",
         "spotify_url": "https://open.spotify.com/episode/1aORzvdyPcTPflaRU45Chr"
       },
       {
         "id": "7hahi5wUipLQp9cYUPDL2i",
-        "title": "Chapter 6 - The Politics of Public Opinion",
+        "title": "Chapter 6: Voting and Elections",
         "spotify_url": "https://open.spotify.com/episode/7hahi5wUipLQp9cYUPDL2i"
       },
       {
         "id": "2X9BRTFutBgyA2AJXYDf1b",
-        "title": "Chapter 7 - Voting and Elections",
+        "title": "Chapter 7: The Media",
         "spotify_url": "https://open.spotify.com/episode/2X9BRTFutBgyA2AJXYDf1b"
       },
       {
         "id": "4ZJTCy1NQlNlmoSanXB2Hr",
-        "title": "Chapter 8 - The Media",
+        "title": "Chapter 8: Political Parties",
         "spotify_url": "https://open.spotify.com/episode/4ZJTCy1NQlNlmoSanXB2Hr"
       },
       {
         "id": "02ShiQenjI96P5ONjw4QmJ",
-        "title": "Chapter 9 - Political Parties",
+        "title": "Chapter 9: Interest Groups and Lobbying",
         "spotify_url": "https://open.spotify.com/episode/02ShiQenjI96P5ONjw4QmJ"
       },
       {
         "id": "21cb1xivm1aYmB8Jd3gdPA",
-        "title": "Chapter 10 - Interest Groups and Lobbying",
+        "title": "Chapter 10: Congress",
         "spotify_url": "https://open.spotify.com/episode/21cb1xivm1aYmB8Jd3gdPA"
       },
       {
         "id": "7u36Wip1F2CWS3m3mRKRjF",
-        "title": "Chapter 11 - Congress",
+        "title": "Chapter 11: The Presidency",
         "spotify_url": "https://open.spotify.com/episode/7u36Wip1F2CWS3m3mRKRjF"
+      },
+      {
+        "id": "5j4Tho7gi1EKhIy9RPtObQ",
+        "title": "Chapter 12: The Courts",
+        "spotify_url": "https://open.spotify.com/episode/5j4Tho7gi1EKhIy9RPtObQ"
+      },
+      {
+        "id": "3cz8xND1haFlz2irXuwdc0",
+        "title": "Chapter 13: State and Local Government",
+        "spotify_url": "https://open.spotify.com/episode/3cz8xND1haFlz2irXuwdc0"
+      },
+      {
+        "id": "1aSQxcCHUzPPJM768mT5o3",
+        "title": "Chapter 14: The Bureaucracy",
+        "spotify_url": "https://open.spotify.com/episode/1aSQxcCHUzPPJM768mT5o3"
+      },
+      {
+        "id": "6EG8JTBs2NuTJQxF3jkobm",
+        "title": "Chapter 15: Domestic Policy",
+        "spotify_url": "https://open.spotify.com/episode/6EG8JTBs2NuTJQxF3jkobm"
+      },
+      {
+        "id": "47I76Y2VekJ5vP4kGkiOcY",
+        "title": "Chapter 16: Foreign Policy",
+        "spotify_url": "https://open.spotify.com/episode/47I76Y2VekJ5vP4kGkiOcY"
       }
     ]
   },
@@ -69,63 +89,83 @@
     "expected_episodes": [
       {
         "id": "7gXcSWYXDDiJF5I7EuC2Py",
-        "title": "01. American Government and Civic Engagement",
+        "title": "Chapter 1: The Constitution and Its Origins",
         "spotify_url": "https://open.spotify.com/episode/7gXcSWYXDDiJF5I7EuC2Py"
       },
       {
         "id": "0f6ganMrGPa5E8urOAEPM0",
-        "title": "02. The Constitution and Its Origins",
+        "title": "Chapter 2: American Federalism",
         "spotify_url": "https://open.spotify.com/episode/0f6ganMrGPa5E8urOAEPM0"
       },
       {
         "id": "065r3X2go5u4fzs1XM5cv7",
-        "title": "03. American Federalism",
+        "title": "Chapter 3: Civil Liberties",
         "spotify_url": "https://open.spotify.com/episode/065r3X2go5u4fzs1XM5cv7"
       },
       {
         "id": "4R13IafU9E4nkXOeqQuDAK",
-        "title": "04. Civil Liberties",
+        "title": "Chapter 4: Civil Rights",
         "spotify_url": "https://open.spotify.com/episode/4R13IafU9E4nkXOeqQuDAK"
       },
       {
         "id": "0SFIWtFuE7ZOQMkCIH8p56",
-        "title": "05. Civil Rights",
+        "title": "Chapter 5: The Politics of Public Opinion",
         "spotify_url": "https://open.spotify.com/episode/0SFIWtFuE7ZOQMkCIH8p56"
       },
       {
         "id": "3EG4Zy96UXyNdOtMl3YNHr",
-        "title": "06. The Politics of Public Opinion",
+        "title": "Chapter 6: Voting and Elections",
         "spotify_url": "https://open.spotify.com/episode/3EG4Zy96UXyNdOtMl3YNHr"
       },
       {
         "id": "4e4Hc7j2nbcqdHuLMCoi5v",
-        "title": "07. Voting and Elections",
+        "title": "Chapter 7: The Media",
         "spotify_url": "https://open.spotify.com/episode/4e4Hc7j2nbcqdHuLMCoi5v"
       },
       {
         "id": "1OZLCn8WMSwld0OwKvUg5z",
-        "title": "08. The Media",
+        "title": "Chapter 8: Political Parties",
         "spotify_url": "https://open.spotify.com/episode/1OZLCn8WMSwld0OwKvUg5z"
       },
       {
         "id": "0kt5qhSMrkXLZTQGMdnmo4",
-        "title": "09. Political Parties",
+        "title": "Chapter 9: Interest Groups and Lobbying",
         "spotify_url": "https://open.spotify.com/episode/0kt5qhSMrkXLZTQGMdnmo4"
       },
       {
         "id": "4TaLfffOLbUuUAYzoajEnU",
-        "title": "10. Interest Groups and Lobbying",
+        "title": "Chapter 10: Congress",
         "spotify_url": "https://open.spotify.com/episode/4TaLfffOLbUuUAYzoajEnU"
       },
       {
         "id": "6UlXCnpvlViknifD6BCzmC",
-        "title": "11. Congress",
+        "title": "Chapter 11: The Presidency",
         "spotify_url": "https://open.spotify.com/episode/6UlXCnpvlViknifD6BCzmC"
       },
       {
         "id": "15b5SCqEcRAeRSODqX3JaH",
-        "title": "12. The Presidency",
+        "title": "Chapter 12: The Courts",
         "spotify_url": "https://open.spotify.com/episode/15b5SCqEcRAeRSODqX3JaH"
+      },
+      {
+        "id": "5NfKeIcfscGluXAfAke2Gn",
+        "title": "Chapter 13: State and Local Government",
+        "spotify_url": "https://open.spotify.com/episode/5NfKeIcfscGluXAfAke2Gn"
+      },
+      {
+        "id": "5Q6esdHh1rqxjFi53yraRD",
+        "title": "Chapter 14: The Bureaucracy",
+        "spotify_url": "https://open.spotify.com/episode/5Q6esdHh1rqxjFi53yraRD"
+      },
+      {
+        "id": "7oSlV2OeQYXs6nG3ovJ2oh",
+        "title": "Chapter 15: Domestic Policy",
+        "spotify_url": "https://open.spotify.com/episode/7oSlV2OeQYXs6nG3ovJ2oh"
+      },
+      {
+        "id": "196aMPqhDDrg1eDpSm07F4",
+        "title": "Chapter 16: Foreign Policy",
+        "spotify_url": "https://open.spotify.com/episode/196aMPqhDDrg1eDpSm07F4"
       }
     ]
   },
@@ -134,63 +174,103 @@
     "expected_episodes": [
       {
         "id": "2agJEPRBvQhu1E0XzQvnMH",
-        "title": "Chapter 1 - An Introduction to Sociology",
+        "title": "Chapter 1: Sociological Research",
         "spotify_url": "https://open.spotify.com/episode/2agJEPRBvQhu1E0XzQvnMH"
       },
       {
         "id": "5CnwkVzUkG86yZGg6R95gd",
-        "title": "Chapter 2 - Sociological Research",
+        "title": "Chapter 2: Culture",
         "spotify_url": "https://open.spotify.com/episode/5CnwkVzUkG86yZGg6R95gd"
       },
       {
         "id": "14VfXq8qfhOnnRIq1Tjb3y",
-        "title": "Chapter 3 - Culture",
+        "title": "Chapter 3: Society and Social Interaction",
         "spotify_url": "https://open.spotify.com/episode/14VfXq8qfhOnnRIq1Tjb3y"
       },
       {
         "id": "4ZaWzmCqKxAp82FPkC2ROI",
-        "title": "Chapter 4 - Society and Social Interaction",
+        "title": "Chapter 4: Socialization",
         "spotify_url": "https://open.spotify.com/episode/4ZaWzmCqKxAp82FPkC2ROI"
       },
       {
         "id": "0w5YO363Y3kFZnBo90S0cI",
-        "title": "Chapter 5 - Socialization",
+        "title": "Chapter 5: Groups and Organization",
         "spotify_url": "https://open.spotify.com/episode/0w5YO363Y3kFZnBo90S0cI"
       },
       {
         "id": "2Aarh1a4X5I8YLKcga6bV8",
-        "title": "Chapter 6 - Groups and Organization",
+        "title": "Chapter 6: Deviance, Crime, and Social Control",
         "spotify_url": "https://open.spotify.com/episode/2Aarh1a4X5I8YLKcga6bV8"
       },
       {
         "id": "2rTXlbaWERVztqjIUgNJKV",
-        "title": "Chapter 7 - Deviance, Crime, and Social Control",
+        "title": "Chapter 7: Media and Technology",
         "spotify_url": "https://open.spotify.com/episode/2rTXlbaWERVztqjIUgNJKV"
       },
       {
         "id": "15Kx3ufXmMvYyXD3IAwMIw",
-        "title": "Chapter 8 - Media and Technology",
+        "title": "Chapter 8: Social Stratification in the United States",
         "spotify_url": "https://open.spotify.com/episode/15Kx3ufXmMvYyXD3IAwMIw"
       },
       {
         "id": "4NPvmJpiELKZVBDzCBnFIk",
-        "title": "Chapter 9 - Social Stratification in the United States",
+        "title": "Chapter 9: Global Inequality",
         "spotify_url": "https://open.spotify.com/episode/4NPvmJpiELKZVBDzCBnFIk"
       },
       {
         "id": "3IYQzofNj136DGzexK8wv4",
-        "title": "Chapter 10 - Global Inequality",
+        "title": "Chapter 10: Race and Ethnicity",
         "spotify_url": "https://open.spotify.com/episode/3IYQzofNj136DGzexK8wv4"
       },
       {
         "id": "4ju9mgvf3Cxs1lKFItCxX1",
-        "title": "Chapter 11 - Race and Ethnicity",
+        "title": "Chapter 11: Gender, Sex, and Sexuality",
         "spotify_url": "https://open.spotify.com/episode/4ju9mgvf3Cxs1lKFItCxX1"
       },
       {
         "id": "2TX80z7bdnFdT1J6Bt7QLb",
-        "title": "Chapter 12 - Gender, Sex, and Sexuality",
+        "title": "Chapter 12: Aging and the Elderly",
         "spotify_url": "https://open.spotify.com/episode/2TX80z7bdnFdT1J6Bt7QLb"
+      },
+      {
+        "id": "6mLqVrkhDJ1bye8YRurxLW",
+        "title": "Chapter 13: Relationships, Marriage, and Family",
+        "spotify_url": "https://open.spotify.com/episode/6mLqVrkhDJ1bye8YRurxLW"
+      },
+      {
+        "id": "0aKSW83oLPQ42Fb53oUBZw",
+        "title": "Chapter 14: Religion",
+        "spotify_url": "https://open.spotify.com/episode/0aKSW83oLPQ42Fb53oUBZw"
+      },
+      {
+        "id": "6loL8SLkeDy1K9kqub6M4S",
+        "title": "Chapter 15: Education",
+        "spotify_url": "https://open.spotify.com/episode/6loL8SLkeDy1K9kqub6M4S"
+      },
+      {
+        "id": "1C5LOhntz5Wm2gaMtbMVfT",
+        "title": "Chapter 16: Government and Politics",
+        "spotify_url": "https://open.spotify.com/episode/1C5LOhntz5Wm2gaMtbMVfT"
+      },
+      {
+        "id": "4uVGib2YWwJ40XysJaGuSL",
+        "title": "Chapter 17: Work and the Economy",
+        "spotify_url": "https://open.spotify.com/episode/4uVGib2YWwJ40XysJaGuSL"
+      },
+      {
+        "id": "1JMipBm5slmOy7GOWMvONG",
+        "title": "Chapter 18: Health and Medicine",
+        "spotify_url": "https://open.spotify.com/episode/1JMipBm5slmOy7GOWMvONG"
+      },
+      {
+        "id": "1o7u726cyWXhqwDbVJ0NDS",
+        "title": "Chapter 19: Population, Urbanization, and the Environment",
+        "spotify_url": "https://open.spotify.com/episode/1o7u726cyWXhqwDbVJ0NDS"
+      },
+      {
+        "id": "3Ig2nL7J3DIdtHTHFGbCnY",
+        "title": "Chapter 20: Social Movements and Social Change",
+        "spotify_url": "https://open.spotify.com/episode/3Ig2nL7J3DIdtHTHFGbCnY"
       }
     ]
   },
@@ -198,64 +278,164 @@
     "name": "US History",
     "expected_episodes": [
       {
+        "id": "4d7qVKcJXeKXdNT783ZMqK",
+        "title": "Chapter 1: The Americas, Europe, and Africa Before 1492",
+        "spotify_url": "https://open.spotify.com/episode/4d7qVKcJXeKXdNT783ZMqK"
+      },
+      {
         "id": "57CS8zEcpKrSR9obXUF4ME",
-        "title": "Chapter 1 - The Americas, Europe, and Africa Before 1492",
+        "title": "Chapter 2: Early Globalization: The Atlantic World, 1492\u20131650",
         "spotify_url": "https://open.spotify.com/episode/57CS8zEcpKrSR9obXUF4ME"
       },
       {
         "id": "6aFSyMpOZZuzM06T6zctID",
-        "title": "Chapter 2 - Early Globalization: The Atlantic World, 1492\u20131650",
+        "title": "Chapter 3: Creating New Social Orders: Colonial Societies, 1500\u20131700",
         "spotify_url": "https://open.spotify.com/episode/6aFSyMpOZZuzM06T6zctID"
       },
       {
         "id": "472TfrXXOWuwxQmgV62pci",
-        "title": "Chapter 3 - Creating New Social Orders: Colonial Societies, 1500\u20131700",
+        "title": "Chapter 4: Rule Britannia! The English Empire, 1660\u20131763",
         "spotify_url": "https://open.spotify.com/episode/472TfrXXOWuwxQmgV62pci"
       },
       {
         "id": "35aDrPRuLCUlGdKRis3JFO",
-        "title": "Chapter 4 - Rule Britannia! The English Empire, 1660\u20131763",
+        "title": "Chapter 5: Imperial Reforms and Colonial Protests, 1763-1774",
         "spotify_url": "https://open.spotify.com/episode/35aDrPRuLCUlGdKRis3JFO"
       },
       {
         "id": "1uKS5OoPOKjPLdy3zHx50a",
-        "title": "Chapter 5 - Imperial Reforms and Colonial Protests, 1763-1774",
+        "title": "Chapter 6: America's War for Independence, 1775-1783",
         "spotify_url": "https://open.spotify.com/episode/1uKS5OoPOKjPLdy3zHx50a"
       },
       {
         "id": "2tbiKof0klkuvt8HuPaVPT",
-        "title": "Chapter 6 - America&#x27;s War for Independence, 1775-1783",
+        "title": "Chapter 7: Creating Republican Governments, 1776\u20131790",
         "spotify_url": "https://open.spotify.com/episode/2tbiKof0klkuvt8HuPaVPT"
       },
       {
         "id": "6uc8VHcg3i7gu31NKqIGFc",
-        "title": "Chapter 7 - Creating Republican Governments, 1776\u20131790",
+        "title": "Chapter 8: Growing Pains: The New Republic, 1790\u20131820",
         "spotify_url": "https://open.spotify.com/episode/6uc8VHcg3i7gu31NKqIGFc"
       },
       {
         "id": "2MVPWDr5NlNfHqYuLZvF9c",
-        "title": "Chapter 8 - Growing Pains: The New Republic, 1790\u20131820",
+        "title": "Chapter 9: Industrial Transformation in the North, 1800\u20131850",
         "spotify_url": "https://open.spotify.com/episode/2MVPWDr5NlNfHqYuLZvF9c"
       },
       {
         "id": "5euASbakrkGcNsE7HC5WB1",
-        "title": "Chapter 9 - Industrial Transformation in the North, 1800\u20131850",
+        "title": "Chapter 10: Jacksonian Democracy, 1820\u20131840",
         "spotify_url": "https://open.spotify.com/episode/5euASbakrkGcNsE7HC5WB1"
       },
       {
         "id": "3W34YS4G1KWDmLLKvXOoQj",
-        "title": "Chapter 10 - Jacksonian Democracy, 1820\u20131840",
+        "title": "Chapter 11: A Nation on the Move: Westward Expansion, 1800\u20131860",
         "spotify_url": "https://open.spotify.com/episode/3W34YS4G1KWDmLLKvXOoQj"
       },
       {
         "id": "75menM5UyFEGsvb4UxX51g",
-        "title": "Chapter 11 - A Nation on the Move: Westward Expansion, 1800\u20131860",
+        "title": "Chapter 12: Cotton is King: The Antebellum South, 1800\u20131860",
         "spotify_url": "https://open.spotify.com/episode/75menM5UyFEGsvb4UxX51g"
       },
       {
         "id": "3pjAsGZa0qz2B62L2vJmh6",
-        "title": "Chapter 12 - Cotton is King: The Antebellum South, 1800\u20131860",
+        "title": "Chapter 13: Antebellum Idealism and Reform Impulses, 1820\u20131860",
         "spotify_url": "https://open.spotify.com/episode/3pjAsGZa0qz2B62L2vJmh6"
+      },
+      {
+        "id": "0OCtIhq1eVMVwu0g2Wouq9",
+        "title": "Chapter 14: Troubled Times: the Tumultuous 1850s",
+        "spotify_url": "https://open.spotify.com/episode/0OCtIhq1eVMVwu0g2Wouq9"
+      },
+      {
+        "id": "2VqV4lF1DpwlzrlJw2w4BE",
+        "title": "Chapter 15: The Civil War, 1860\u20131865",
+        "spotify_url": "https://open.spotify.com/episode/2VqV4lF1DpwlzrlJw2w4BE"
+      },
+      {
+        "id": "3DMvzCkIf1BtWL9jLjoV3r",
+        "title": "Chapter 16: The Era of Reconstruction, 1865-1877",
+        "spotify_url": "https://open.spotify.com/episode/3DMvzCkIf1BtWL9jLjoV3r"
+      },
+      {
+        "id": "6hMcXO40wifgqestdhh7tx",
+        "title": "Chapter 17: Go West Young Man! Westward Expansion, 1840-1900",
+        "spotify_url": "https://open.spotify.com/episode/6hMcXO40wifgqestdhh7tx"
+      },
+      {
+        "id": "45muHnK86CIbEzxpYhH7VN",
+        "title": "Chapter 18: Industrialization and the Rise of Big Business, 1870-1900",
+        "spotify_url": "https://open.spotify.com/episode/45muHnK86CIbEzxpYhH7VN"
+      },
+      {
+        "id": "0u6OsUKd7Yeaatw2rb0S5O",
+        "title": "Chapter 19: The Growing Pains of Urbanization, 1870-1900",
+        "spotify_url": "https://open.spotify.com/episode/0u6OsUKd7Yeaatw2rb0S5O"
+      },
+      {
+        "id": "5yAFuqTcBGAFTZ0Q4q1R6V",
+        "title": "Chapter 20: Politics in the Gilded Age, 1870-1900",
+        "spotify_url": "https://open.spotify.com/episode/5yAFuqTcBGAFTZ0Q4q1R6V"
+      },
+      {
+        "id": "4eCWfc5S0XBlSkTiEuQ2ht",
+        "title": "Chapter 21: Leading the Way: The Progressive Movement, 1890-1920",
+        "spotify_url": "https://open.spotify.com/episode/4eCWfc5S0XBlSkTiEuQ2ht"
+      },
+      {
+        "id": "4ORSPhjoNAyYW55KVXpJTd",
+        "title": "Chapter 22: Age of Empire: American Foreign Policy, 1890-1914",
+        "spotify_url": "https://open.spotify.com/episode/4ORSPhjoNAyYW55KVXpJTd"
+      },
+      {
+        "id": "07UhGbKPuwDolPpyzoz6U2",
+        "title": "Chapter 23: Americans and the Great War, 1914-1919",
+        "spotify_url": "https://open.spotify.com/episode/07UhGbKPuwDolPpyzoz6U2"
+      },
+      {
+        "id": "4yFibfdrM3MO3x9rmPhnBy",
+        "title": "Chapter 24: The Jazz Age: Redefining the Nation, 1919-1929",
+        "spotify_url": "https://open.spotify.com/episode/4yFibfdrM3MO3x9rmPhnBy"
+      },
+      {
+        "id": "6MXjf55LPlOQHDKd90t8H7",
+        "title": "Chapter 25: Brother, Can You Spare a Dime? The Great Depression, 1929-1932",
+        "spotify_url": "https://open.spotify.com/episode/6MXjf55LPlOQHDKd90t8H7"
+      },
+      {
+        "id": "5h9PozuYqYuBSpSJUDvfs8",
+        "title": "Chapter 26: Franklin Roosevelt and the New Deal, 1932-1941",
+        "spotify_url": "https://open.spotify.com/episode/5h9PozuYqYuBSpSJUDvfs8"
+      },
+      {
+        "id": "3iSpGu2vsEtqikK7Z6GxtW",
+        "title": "Chapter 27: Fighting the Good Fight in World War II, 1941-1945",
+        "spotify_url": "https://open.spotify.com/episode/3iSpGu2vsEtqikK7Z6GxtW"
+      },
+      {
+        "id": "1iig31nQiGp8E3z2U4X6TT",
+        "title": "Chapter 28: Post-War Prosperity and Cold War Fears, 1945-1960",
+        "spotify_url": "https://open.spotify.com/episode/1iig31nQiGp8E3z2U4X6TT"
+      },
+      {
+        "id": "6GevgdNbbiw4SRfsLfNxj4",
+        "title": "Chapter 29: Contesting Futures: America in the 1960s",
+        "spotify_url": "https://open.spotify.com/episode/6GevgdNbbiw4SRfsLfNxj4"
+      },
+      {
+        "id": "1eiL4jIPXCL1Y05uOWCTXZ",
+        "title": "Chapter 30: Political Storms at Home and Abroad, 1968-1980",
+        "spotify_url": "https://open.spotify.com/episode/1eiL4jIPXCL1Y05uOWCTXZ"
+      },
+      {
+        "id": "5lFcICY1JPCJSYSmrcHmjf",
+        "title": "Chapter 31: From Cold War to Culture Wars, 1980-2000",
+        "spotify_url": "https://open.spotify.com/episode/5lFcICY1JPCJSYSmrcHmjf"
+      },
+      {
+        "id": "1WpCElNF0lwoEfxW70v0Xl",
+        "title": "Chapter 32: The Challenges of the Twenty-First Century",
+        "spotify_url": "https://open.spotify.com/episode/1WpCElNF0lwoEfxW70v0Xl"
       }
     ]
   },
@@ -264,63 +444,73 @@
     "expected_episodes": [
       {
         "id": "5CNYVS5FEXbbsm2QLtzBbR",
-        "title": "Chapter 1 - Understanding the Past",
+        "title": "Chapter 1: Early Humans",
         "spotify_url": "https://open.spotify.com/episode/5CNYVS5FEXbbsm2QLtzBbR"
       },
       {
         "id": "339JY76S6HSBC81mPUaApU",
-        "title": "Chapter 2 - Early Humans",
+        "title": "Chapter 2: Early Civilizations and Urban Societies",
         "spotify_url": "https://open.spotify.com/episode/339JY76S6HSBC81mPUaApU"
       },
       {
         "id": "6LcYfw8npZmFKIzZ7N38y4",
-        "title": "Chapter 3 - Early Civilizations and Urban Societies",
+        "title": "Chapter 3: The Near East",
         "spotify_url": "https://open.spotify.com/episode/6LcYfw8npZmFKIzZ7N38y4"
       },
       {
         "id": "17oMGZVsA4ycMtJoqbfJno",
-        "title": "Chapter 4 - The Near East",
+        "title": "Chapter 4: Asia in Ancient Times",
         "spotify_url": "https://open.spotify.com/episode/17oMGZVsA4ycMtJoqbfJno"
       },
       {
         "id": "23ROEl4LYKiIjTyvfkBRCL",
-        "title": "Chapter 5 - Asia in Ancient Times",
+        "title": "Chapter 5: Mediterranean Peoples",
         "spotify_url": "https://open.spotify.com/episode/23ROEl4LYKiIjTyvfkBRCL"
       },
       {
         "id": "71H3pfmpvo3NUZvKJvBKYa",
-        "title": "Chapter 6 - Mediterranean Peoples",
+        "title": "Chapter 6: Experiencing the Roman Empire",
         "spotify_url": "https://open.spotify.com/episode/71H3pfmpvo3NUZvKJvBKYa"
       },
       {
         "id": "32FDHGzhWm8ERzqUxvHbHV",
-        "title": "Chapter 7 - Experiencing the Roman Empire",
+        "title": "Chapter 7: The Americas in Ancient Times",
         "spotify_url": "https://open.spotify.com/episode/32FDHGzhWm8ERzqUxvHbHV"
       },
       {
         "id": "4R1qEudIvChafdnq8rFMB0",
-        "title": "Chapter 8 - The Americas in Ancient Times",
+        "title": "Chapter 8: Africa in Ancient Times",
         "spotify_url": "https://open.spotify.com/episode/4R1qEudIvChafdnq8rFMB0"
       },
       {
         "id": "1xdf3Ylb0wvLj8jxzCmMLN",
-        "title": "Chapter 9 - Africa in Ancient Times",
+        "title": "Chapter 9: Empires of Faith",
         "spotify_url": "https://open.spotify.com/episode/1xdf3Ylb0wvLj8jxzCmMLN"
       },
       {
         "id": "2IISPc29FUX3dU7slVA5s4",
-        "title": "Chapter 10 - Empires of Faith",
+        "title": "Chapter 10: The Rise of Islam and the Caliphates",
         "spotify_url": "https://open.spotify.com/episode/2IISPc29FUX3dU7slVA5s4"
       },
       {
         "id": "04soQma6pOPi8ORKDpWeOh",
-        "title": "Chapter 11 - The Rise of Islam and the Caliphates",
+        "title": "Chapter 11: India, the Indian Ocean Basin, and East Asia",
         "spotify_url": "https://open.spotify.com/episode/04soQma6pOPi8ORKDpWeOh"
       },
       {
         "id": "5JSgFxPjqAtZ99bK2k0WWu",
-        "title": "Chapter 12 - India, the Indian Ocean Basin, and East Asia",
+        "title": "Chapter 12: The Post Roman West and the Crusading Movement",
         "spotify_url": "https://open.spotify.com/episode/5JSgFxPjqAtZ99bK2k0WWu"
+      },
+      {
+        "id": "3ocjvv6xKczQC97SxWDkUc",
+        "title": "Chapter 13: Pax Mongolica: The Steppe Empire of the Mongols",
+        "spotify_url": "https://open.spotify.com/episode/3ocjvv6xKczQC97SxWDkUc"
+      },
+      {
+        "id": "2S4k3dEwfDWTv1Ynb0WzKT",
+        "title": "Chapter 14: States and Societies in Sub-Saharan Africa",
+        "spotify_url": "https://open.spotify.com/episode/2S4k3dEwfDWTv1Ynb0WzKT"
       }
     ]
   },
@@ -328,64 +518,89 @@
     "name": "Introduction to Business 2e",
     "expected_episodes": [
       {
-        "id": "4AGkK3SCKogbB3gTMR2dyK",
-        "title": "Appendix A \u2022 Understanding the Legal and Tax Environment",
-        "spotify_url": "https://open.spotify.com/episode/4AGkK3SCKogbB3gTMR2dyK"
+        "id": "7HOiM3L5he2hcgFav70Zqi",
+        "title": "Chapter 1: Making Ethical Decisions and Managing a Socially Responsible Business",
+        "spotify_url": "https://open.spotify.com/episode/7HOiM3L5he2hcgFav70Zqi"
       },
       {
-        "id": "1TosTNrjzQSQodD8aTY6w5",
-        "title": "17. Your Career in Business",
-        "spotify_url": "https://open.spotify.com/episode/1TosTNrjzQSQodD8aTY6w5"
+        "id": "6oy5zZHjgMlpRDxG0mw5gS",
+        "title": "Chapter 2: Competing in the Global Marketplace",
+        "spotify_url": "https://open.spotify.com/episode/6oy5zZHjgMlpRDxG0mw5gS"
       },
       {
-        "id": "0OV1W2N7KYuojtuMyiZlvQ",
-        "title": "16. Understanding Financial Management and Securities Markets",
-        "spotify_url": "https://open.spotify.com/episode/0OV1W2N7KYuojtuMyiZlvQ"
+        "id": "0Usfmoxi3a3xJXdMVLgSb5",
+        "title": "Chapter 3: Forms of Business Ownership",
+        "spotify_url": "https://open.spotify.com/episode/0Usfmoxi3a3xJXdMVLgSb5"
       },
       {
-        "id": "6AGzLqzHO8fJDGV7SEXYO6",
-        "title": "15. Understanding Money and Financial Institutions",
-        "spotify_url": "https://open.spotify.com/episode/6AGzLqzHO8fJDGV7SEXYO6"
+        "id": "1Vl36wUSMfFVdgevkT4yy8",
+        "title": "Chapter 4: Entrepreneurship: Starting and Managing Your Own Business",
+        "spotify_url": "https://open.spotify.com/episode/1Vl36wUSMfFVdgevkT4yy8"
       },
       {
-        "id": "5gVqikEP5HBkOHEHx8w7yE",
-        "title": "14. Using Financial Information and Accounting",
-        "spotify_url": "https://open.spotify.com/episode/5gVqikEP5HBkOHEHx8w7yE"
+        "id": "1ST03BIE1sQPBV2S1xZLoG",
+        "title": "Chapter 5: Management and Leadership in Today's Organizations",
+        "spotify_url": "https://open.spotify.com/episode/1ST03BIE1sQPBV2S1xZLoG"
       },
       {
-        "id": "74FAxJklEd8Bj1wSvRFOWg",
-        "title": "13. Using Technology to Manage Information",
-        "spotify_url": "https://open.spotify.com/episode/74FAxJklEd8Bj1wSvRFOWg"
-      },
-      {
-        "id": "6dlb7FBkk9qbYb1YNwUzax",
-        "title": "12. Distributing and Promoting Products and Services",
-        "spotify_url": "https://open.spotify.com/episode/6dlb7FBkk9qbYb1YNwUzax"
-      },
-      {
-        "id": "4SnQSNPmGny4OdmHUb0mvl",
-        "title": "11. Creating Products and Pricing Strategies to Meet Customers&#x27; Needs",
-        "spotify_url": "https://open.spotify.com/episode/4SnQSNPmGny4OdmHUb0mvl"
-      },
-      {
-        "id": "2s8pjDqMG7fBnB5KRHSlXT",
-        "title": "10. Achieving World-Class Operations Management",
-        "spotify_url": "https://open.spotify.com/episode/2s8pjDqMG7fBnB5KRHSlXT"
-      },
-      {
-        "id": "7shShWpLA1ncyNIRZJaEpg",
-        "title": "09. Motivating Employees",
-        "spotify_url": "https://open.spotify.com/episode/7shShWpLA1ncyNIRZJaEpg"
-      },
-      {
-        "id": "5Dmd2Mms0vVTcWR8cgf4kN",
-        "title": "08. Managing Human Resources and Labor Relations",
-        "spotify_url": "https://open.spotify.com/episode/5Dmd2Mms0vVTcWR8cgf4kN"
+        "id": "32BZPYTOOrVYyvzBpbHCm6",
+        "title": "Chapter 6: Designing Organizational Structures",
+        "spotify_url": "https://open.spotify.com/episode/32BZPYTOOrVYyvzBpbHCm6"
       },
       {
         "id": "0iBdrXMtGVUpxB8PxLWsHb",
-        "title": "07. Designing Organizational Structures",
+        "title": "Chapter 7: Managing Human Resources and Labor Relations",
         "spotify_url": "https://open.spotify.com/episode/0iBdrXMtGVUpxB8PxLWsHb"
+      },
+      {
+        "id": "5Dmd2Mms0vVTcWR8cgf4kN",
+        "title": "Chapter 8: Motivating Employees",
+        "spotify_url": "https://open.spotify.com/episode/5Dmd2Mms0vVTcWR8cgf4kN"
+      },
+      {
+        "id": "7shShWpLA1ncyNIRZJaEpg",
+        "title": "Chapter 9: Achieving World-Class Operations Management",
+        "spotify_url": "https://open.spotify.com/episode/7shShWpLA1ncyNIRZJaEpg"
+      },
+      {
+        "id": "2s8pjDqMG7fBnB5KRHSlXT",
+        "title": "Chapter 10: Creating Products and Pricing Strategies to Meet Customers' Needs",
+        "spotify_url": "https://open.spotify.com/episode/2s8pjDqMG7fBnB5KRHSlXT"
+      },
+      {
+        "id": "4SnQSNPmGny4OdmHUb0mvl",
+        "title": "Chapter 11: Distributing and Promoting Products and Services",
+        "spotify_url": "https://open.spotify.com/episode/4SnQSNPmGny4OdmHUb0mvl"
+      },
+      {
+        "id": "6dlb7FBkk9qbYb1YNwUzax",
+        "title": "Chapter 12: Using Technology to Manage Information",
+        "spotify_url": "https://open.spotify.com/episode/6dlb7FBkk9qbYb1YNwUzax"
+      },
+      {
+        "id": "74FAxJklEd8Bj1wSvRFOWg",
+        "title": "Chapter 13: Using Financial Information and Accounting",
+        "spotify_url": "https://open.spotify.com/episode/74FAxJklEd8Bj1wSvRFOWg"
+      },
+      {
+        "id": "5gVqikEP5HBkOHEHx8w7yE",
+        "title": "Chapter 14: Understanding Money and Financial Institutions",
+        "spotify_url": "https://open.spotify.com/episode/5gVqikEP5HBkOHEHx8w7yE"
+      },
+      {
+        "id": "6AGzLqzHO8fJDGV7SEXYO6",
+        "title": "Chapter 15: Understanding Financial Management and Securities Markets",
+        "spotify_url": "https://open.spotify.com/episode/6AGzLqzHO8fJDGV7SEXYO6"
+      },
+      {
+        "id": "0OV1W2N7KYuojtuMyiZlvQ",
+        "title": "Chapter 16: Your Career in Business",
+        "spotify_url": "https://open.spotify.com/episode/0OV1W2N7KYuojtuMyiZlvQ"
+      },
+      {
+        "id": "1TosTNrjzQSQodD8aTY6w5",
+        "title": "Chapter 17: Understanding the Legal and Tax Environment",
+        "spotify_url": "https://open.spotify.com/episode/1TosTNrjzQSQodD8aTY6w5"
       }
     ]
   }
