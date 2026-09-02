@@ -10,7 +10,6 @@ SPOTIFY_API_BASE = "https://api.spotify.com/v1"
 
 SHOWS_FILE = "shows.json"
 STATUS_FILE = "status.json"
-PREV_STATUS_FILE = "prev_status.json"
 
 def get_spotify_access_token(client_id: str, client_secret: str) -> str:
     """Authenticates with Spotify API using Client Credentials flow."""
@@ -28,21 +27,32 @@ def get_spotify_access_token(client_id: str, client_secret: str) -> str:
         
     return response.json()["access_token"]
 
-def fetch_show_episodes(access_token: str, show_id: str, market: str = "US"):
-    """Fetches all episodes/chapters for a given Spotify Show ID."""
+def fetch_show_details(access_token: str, show_id: str, market: str = "US"):
+    """Fetches show metadata (title, publisher, images) and all episodes."""
     headers = {"Authorization": f"Bearer {access_token}"}
-    episodes = []
-    url = f"{SPOTIFY_API_BASE}/shows/{show_id}/episodes?market={market}&limit=50"
     
-    while url:
-        res = requests.get(url, headers=headers)
-        if res.status_code == 404:
-            print(f"⚠️ Show ID '{show_id}' not found (404).")
-            return None, []
-        res.raise_for_status()
-        data = res.json()
+    # 1. Fetch Show Header
+    show_url = f"{SPOTIFY_API_BASE}/shows/{show_id}?market={market}"
+    res = requests.get(show_url, headers=headers)
+    if res.status_code == 404:
+        print(f"⚠️ Show ID '{show_id}' not found (404).")
+        return None, "Unknown Show", []
+    res.raise_for_status()
+    show_data = res.json()
+    show_name = show_data.get("name", f"Show ({show_id})")
+
+    # 2. Fetch Episodes (Paginated)
+    episodes = []
+    episodes_url = f"{SPOTIFY_API_BASE}/shows/{show_id}/episodes?market={market}&limit=50"
+    
+    while episodes_url:
+        ep_res = requests.get(episodes_url, headers=headers)
+        if ep_res.status_code != 200:
+            print(f"⚠️ Warning: Could not fetch episodes page ({ep_res.status_code}): {ep_res.text}")
+            break
+        ep_data = ep_res.json()
         
-        for item in data.get("items", []):
+        for item in ep_data.get("items", []):
             if item is None:
                 continue
             is_playable = item.get("is_playable", True)
@@ -59,48 +69,11 @@ def fetch_show_episodes(access_token: str, show_id: str, market: str = "US"):
                 "external_url": item.get("external_urls", {}).get("spotify")
             })
             
-        url = data.get("next")
+        episodes_url = ep_data.get("next")
         
-    return True, episodes
-
-def fetch_playlist_tracks(access_token: str, playlist_id: str, market: str = "US"):
-    """Fetches all tracks/episodes from a Spotify Playlist ID."""
-    headers = {"Authorization": f"Bearer {access_token}"}
-    items_list = []
-    url = f"{SPOTIFY_API_BASE}/playlists/{playlist_id}/tracks?market={market}&limit=50"
-    
-    while url:
-        res = requests.get(url, headers=headers)
-        if res.status_code == 404:
-            print(f"⚠️ Playlist ID '{playlist_id}' not found (404).")
-            return None, []
-        res.raise_for_status()
-        data = res.json()
-        
-        for entry in data.get("items", []):
-            track = entry.get("track")
-            if not track:
-                continue
-            is_playable = track.get("is_playable", True)
-            restrictions = track.get("restrictions", {})
-            reason = restrictions.get("reason", "None" if is_playable else "Unplayable/Flagged")
-            
-            items_list.append({
-                "id": track["id"],
-                "name": track["name"],
-                "release_date": track.get("album", {}).get("release_date"),
-                "duration_ms": track.get("duration_ms"),
-                "is_playable": is_playable,
-                "reason": reason,
-                "external_url": track.get("external_urls", {}).get("spotify")
-            })
-            
-        url = data.get("next")
-        
-    return True, items_list
+    return True, show_name, episodes
 
 def send_resend_alert(api_key: str, to_email: str, from_email: str, newly_offline: list):
-    """Sends email alert via Resend when chapters are flagged/offline."""
     subject = f"🚨 OpenAudio Alert: {len(newly_offline)} Spotify Chapter(s) Offline!"
     
     rows = ""
@@ -137,8 +110,6 @@ def send_resend_alert(api_key: str, to_email: str, from_email: str, newly_offlin
             {rows}
           </tbody>
         </table>
-        
-        <p style="margin-top: 25px; font-size: 13px; color: #777;">Check your Spotify Creator Dashboard or distribution partner for copyright notifications.</p>
       </div>
     </div>
     """
@@ -208,25 +179,16 @@ def main():
     newly_offline_list = []
     
     for show_item in shows_config:
-        show_name = show_item["name"]
         spotify_id = show_item["spotify_id"]
-        id_type = show_item.get("type", "show").lower()  # "show" or "playlist"
         
-        print(f"\nScanning {id_type.upper()}: '{show_name}' (ID: {spotify_id})...")
-        
-        if spotify_id.startswith("REPLACE_WITH"):
-            print("⚠️ Placeholder Spotify ID detected. Skipping.")
-            continue
-            
-        if id_type == "playlist":
-            found, episodes = fetch_playlist_tracks(access_token, spotify_id)
-        else:
-            found, episodes = fetch_show_episodes(access_token, spotify_id)
+        found, real_show_name, episodes = fetch_show_details(access_token, spotify_id)
             
         if not found:
-            print(f"❌ Could not fetch content for '{show_name}'.")
+            print(f"❌ Could not fetch content for show ID '{spotify_id}'.")
             continue
             
+        print(f"\nScanning SHOW: '{real_show_name}' (ID: {spotify_id})...")
+        
         show_online = 0
         show_offline = 0
         processed_episodes = []
@@ -239,29 +201,26 @@ def main():
             else:
                 audit_results["offline_chapters"] += 1
                 show_offline += 1
-                # Check if newly offline
                 if ep["id"] not in prev_offline_ids:
                     newly_offline_list.append({
-                        "show_name": show_name,
+                        "show_name": real_show_name,
                         "name": ep["name"],
                         "reason": ep["reason"],
                         "external_url": ep["external_url"]
                     })
             processed_episodes.append(ep)
             
-        print(f"  Summary for '{show_name}': {show_online} Online, {show_offline} Offline (Total {len(episodes)})")
+        print(f"  Summary for '{real_show_name}': {show_online} Online, {show_offline} Offline (Total {len(episodes)})")
         
         audit_results["shows"].append({
-            "name": show_name,
+            "name": real_show_name,
             "spotify_id": spotify_id,
-            "type": id_type,
             "total": len(episodes),
             "online": show_online,
             "offline": show_offline,
             "episodes": processed_episodes
         })
         
-    # Save updated status.json
     with open(STATUS_FILE, "w") as f:
         json.dump(audit_results, f, indent=2)
     print(f"\nSaved updated audit results to '{STATUS_FILE}'.")
