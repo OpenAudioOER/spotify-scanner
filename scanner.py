@@ -13,11 +13,13 @@ HEADERS = {
 }
 
 def audit_spotify_episode(spotify_url: str):
-    """Scrapes individual Spotify web page to check if episode is online or 404/taken down."""
+    """Scrapes individual Spotify web page to check if episode is online or unplayable/deleted."""
     try:
         res = requests.get(spotify_url, headers=HEADERS, timeout=10)
         if res.status_code == 404:
             return False, "404 Not Found (Deleted/Removed)"
+        elif res.status_code >= 500:
+            return False, f"Spotify Server Error (HTTP {res.status_code})"
         elif res.status_code != 200:
             return False, f"HTTP Status {res.status_code}"
             
