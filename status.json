@@ -1,8 +1,561 @@
 {
-  "last_updated": "2026-09-02T21:42:46.371592+00:00",
+  "last_updated": "2026-09-02T21:45:38.651966+00:00",
   "total_shows": 6,
-  "total_chapters": 0,
-  "online_chapters": 0,
+  "total_chapters": 72,
+  "online_chapters": 72,
   "offline_chapters": 0,
-  "shows": []
+  "shows": [
+    {
+      "name": "American Government 3e",
+      "total": 12,
+      "online": 12,
+      "offline": 0,
+      "episodes": [
+        {
+          "id": "3OKzW22iXPb2oklS2d1cMl",
+          "name": "Trailer",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/3OKzW22iXPb2oklS2d1cMl"
+        },
+        {
+          "id": "3Nbuw8ZeBoS8Dq8lGvbj4p",
+          "name": "Chapter 1 - American Government and Civic Engagement",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/3Nbuw8ZeBoS8Dq8lGvbj4p"
+        },
+        {
+          "id": "2LboVLpaeko7geJAe7dRYI",
+          "name": "Chapter 2 - The Constitution and Its Origins",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/2LboVLpaeko7geJAe7dRYI"
+        },
+        {
+          "id": "1fa0wi29tNt62pcfIcaA5D",
+          "name": "Chapter 3 - American Federalism",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/1fa0wi29tNt62pcfIcaA5D"
+        },
+        {
+          "id": "4Z21MMTezh3X4EMhDfETje",
+          "name": "Chapter 4 - Civil Liberties",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/4Z21MMTezh3X4EMhDfETje"
+        },
+        {
+          "id": "1aORzvdyPcTPflaRU45Chr",
+          "name": "Chapter 5 - Civil Rights",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/1aORzvdyPcTPflaRU45Chr"
+        },
+        {
+          "id": "7hahi5wUipLQp9cYUPDL2i",
+          "name": "Chapter 6 - The Politics of Public Opinion",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/7hahi5wUipLQp9cYUPDL2i"
+        },
+        {
+          "id": "2X9BRTFutBgyA2AJXYDf1b",
+          "name": "Chapter 7 - Voting and Elections",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/2X9BRTFutBgyA2AJXYDf1b"
+        },
+        {
+          "id": "4ZJTCy1NQlNlmoSanXB2Hr",
+          "name": "Chapter 8 - The Media",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/4ZJTCy1NQlNlmoSanXB2Hr"
+        },
+        {
+          "id": "02ShiQenjI96P5ONjw4QmJ",
+          "name": "Chapter 9 - Political Parties",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/02ShiQenjI96P5ONjw4QmJ"
+        },
+        {
+          "id": "21cb1xivm1aYmB8Jd3gdPA",
+          "name": "Chapter 10 - Interest Groups and Lobbying",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/21cb1xivm1aYmB8Jd3gdPA"
+        },
+        {
+          "id": "7u36Wip1F2CWS3m3mRKRjF",
+          "name": "Chapter 11 - Congress",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/7u36Wip1F2CWS3m3mRKRjF"
+        }
+      ]
+    },
+    {
+      "name": "American Government 4e",
+      "total": 12,
+      "online": 12,
+      "offline": 0,
+      "episodes": [
+        {
+          "id": "7gXcSWYXDDiJF5I7EuC2Py",
+          "name": "01. American Government and Civic Engagement",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/7gXcSWYXDDiJF5I7EuC2Py"
+        },
+        {
+          "id": "0f6ganMrGPa5E8urOAEPM0",
+          "name": "02. The Constitution and Its Origins",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/0f6ganMrGPa5E8urOAEPM0"
+        },
+        {
+          "id": "065r3X2go5u4fzs1XM5cv7",
+          "name": "03. American Federalism",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/065r3X2go5u4fzs1XM5cv7"
+        },
+        {
+          "id": "4R13IafU9E4nkXOeqQuDAK",
+          "name": "04. Civil Liberties",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/4R13IafU9E4nkXOeqQuDAK"
+        },
+        {
+          "id": "0SFIWtFuE7ZOQMkCIH8p56",
+          "name": "05. Civil Rights",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/0SFIWtFuE7ZOQMkCIH8p56"
+        },
+        {
+          "id": "3EG4Zy96UXyNdOtMl3YNHr",
+          "name": "06. The Politics of Public Opinion",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/3EG4Zy96UXyNdOtMl3YNHr"
+        },
+        {
+          "id": "4e4Hc7j2nbcqdHuLMCoi5v",
+          "name": "07. Voting and Elections",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/4e4Hc7j2nbcqdHuLMCoi5v"
+        },
+        {
+          "id": "1OZLCn8WMSwld0OwKvUg5z",
+          "name": "08. The Media",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/1OZLCn8WMSwld0OwKvUg5z"
+        },
+        {
+          "id": "0kt5qhSMrkXLZTQGMdnmo4",
+          "name": "09. Political Parties",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/0kt5qhSMrkXLZTQGMdnmo4"
+        },
+        {
+          "id": "4TaLfffOLbUuUAYzoajEnU",
+          "name": "10. Interest Groups and Lobbying",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/4TaLfffOLbUuUAYzoajEnU"
+        },
+        {
+          "id": "6UlXCnpvlViknifD6BCzmC",
+          "name": "11. Congress",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/6UlXCnpvlViknifD6BCzmC"
+        },
+        {
+          "id": "15b5SCqEcRAeRSODqX3JaH",
+          "name": "12. The Presidency",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/15b5SCqEcRAeRSODqX3JaH"
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Sociology",
+      "total": 12,
+      "online": 12,
+      "offline": 0,
+      "episodes": [
+        {
+          "id": "2agJEPRBvQhu1E0XzQvnMH",
+          "name": "Chapter 1 - An Introduction to Sociology",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/2agJEPRBvQhu1E0XzQvnMH"
+        },
+        {
+          "id": "5CnwkVzUkG86yZGg6R95gd",
+          "name": "Chapter 2 - Sociological Research",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/5CnwkVzUkG86yZGg6R95gd"
+        },
+        {
+          "id": "14VfXq8qfhOnnRIq1Tjb3y",
+          "name": "Chapter 3 - Culture",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/14VfXq8qfhOnnRIq1Tjb3y"
+        },
+        {
+          "id": "4ZaWzmCqKxAp82FPkC2ROI",
+          "name": "Chapter 4 - Society and Social Interaction",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/4ZaWzmCqKxAp82FPkC2ROI"
+        },
+        {
+          "id": "0w5YO363Y3kFZnBo90S0cI",
+          "name": "Chapter 5 - Socialization",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/0w5YO363Y3kFZnBo90S0cI"
+        },
+        {
+          "id": "2Aarh1a4X5I8YLKcga6bV8",
+          "name": "Chapter 6 - Groups and Organization",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/2Aarh1a4X5I8YLKcga6bV8"
+        },
+        {
+          "id": "2rTXlbaWERVztqjIUgNJKV",
+          "name": "Chapter 7 - Deviance, Crime, and Social Control",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/2rTXlbaWERVztqjIUgNJKV"
+        },
+        {
+          "id": "15Kx3ufXmMvYyXD3IAwMIw",
+          "name": "Chapter 8 - Media and Technology",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/15Kx3ufXmMvYyXD3IAwMIw"
+        },
+        {
+          "id": "4NPvmJpiELKZVBDzCBnFIk",
+          "name": "Chapter 9 - Social Stratification in the United States",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/4NPvmJpiELKZVBDzCBnFIk"
+        },
+        {
+          "id": "3IYQzofNj136DGzexK8wv4",
+          "name": "Chapter 10 - Global Inequality",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/3IYQzofNj136DGzexK8wv4"
+        },
+        {
+          "id": "4ju9mgvf3Cxs1lKFItCxX1",
+          "name": "Chapter 11 - Race and Ethnicity",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/4ju9mgvf3Cxs1lKFItCxX1"
+        },
+        {
+          "id": "2TX80z7bdnFdT1J6Bt7QLb",
+          "name": "Chapter 12 - Gender, Sex, and Sexuality",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/2TX80z7bdnFdT1J6Bt7QLb"
+        }
+      ]
+    },
+    {
+      "name": "US History",
+      "total": 12,
+      "online": 12,
+      "offline": 0,
+      "episodes": [
+        {
+          "id": "57CS8zEcpKrSR9obXUF4ME",
+          "name": "Chapter 1 - The Americas, Europe, and Africa Before 1492",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/57CS8zEcpKrSR9obXUF4ME"
+        },
+        {
+          "id": "6aFSyMpOZZuzM06T6zctID",
+          "name": "Chapter 2 - Early Globalization: The Atlantic World, 1492\u20131650",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/6aFSyMpOZZuzM06T6zctID"
+        },
+        {
+          "id": "472TfrXXOWuwxQmgV62pci",
+          "name": "Chapter 3 - Creating New Social Orders: Colonial Societies, 1500\u20131700",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/472TfrXXOWuwxQmgV62pci"
+        },
+        {
+          "id": "35aDrPRuLCUlGdKRis3JFO",
+          "name": "Chapter 4 - Rule Britannia! The English Empire, 1660\u20131763",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/35aDrPRuLCUlGdKRis3JFO"
+        },
+        {
+          "id": "1uKS5OoPOKjPLdy3zHx50a",
+          "name": "Chapter 5 - Imperial Reforms and Colonial Protests, 1763-1774",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/1uKS5OoPOKjPLdy3zHx50a"
+        },
+        {
+          "id": "2tbiKof0klkuvt8HuPaVPT",
+          "name": "Chapter 6 - America's War for Independence, 1775-1783",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/2tbiKof0klkuvt8HuPaVPT"
+        },
+        {
+          "id": "6uc8VHcg3i7gu31NKqIGFc",
+          "name": "Chapter 7 - Creating Republican Governments, 1776\u20131790",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/6uc8VHcg3i7gu31NKqIGFc"
+        },
+        {
+          "id": "2MVPWDr5NlNfHqYuLZvF9c",
+          "name": "Chapter 8 - Growing Pains: The New Republic, 1790\u20131820",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/2MVPWDr5NlNfHqYuLZvF9c"
+        },
+        {
+          "id": "5euASbakrkGcNsE7HC5WB1",
+          "name": "Chapter 9 - Industrial Transformation in the North, 1800\u20131850",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/5euASbakrkGcNsE7HC5WB1"
+        },
+        {
+          "id": "3W34YS4G1KWDmLLKvXOoQj",
+          "name": "Chapter 10 - Jacksonian Democracy, 1820\u20131840",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/3W34YS4G1KWDmLLKvXOoQj"
+        },
+        {
+          "id": "75menM5UyFEGsvb4UxX51g",
+          "name": "Chapter 11 - A Nation on the Move: Westward Expansion, 1800\u20131860",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/75menM5UyFEGsvb4UxX51g"
+        },
+        {
+          "id": "3pjAsGZa0qz2B62L2vJmh6",
+          "name": "Chapter 12 - Cotton is King: The Antebellum South, 1800\u20131860",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/3pjAsGZa0qz2B62L2vJmh6"
+        }
+      ]
+    },
+    {
+      "name": "World History, Vol. 1",
+      "total": 12,
+      "online": 12,
+      "offline": 0,
+      "episodes": [
+        {
+          "id": "5CNYVS5FEXbbsm2QLtzBbR",
+          "name": "Chapter 1 - Understanding the Past",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/5CNYVS5FEXbbsm2QLtzBbR"
+        },
+        {
+          "id": "339JY76S6HSBC81mPUaApU",
+          "name": "Chapter 2 - Early Humans",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/339JY76S6HSBC81mPUaApU"
+        },
+        {
+          "id": "6LcYfw8npZmFKIzZ7N38y4",
+          "name": "Chapter 3 - Early Civilizations and Urban Societies",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/6LcYfw8npZmFKIzZ7N38y4"
+        },
+        {
+          "id": "17oMGZVsA4ycMtJoqbfJno",
+          "name": "Chapter 4 - The Near East",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/17oMGZVsA4ycMtJoqbfJno"
+        },
+        {
+          "id": "23ROEl4LYKiIjTyvfkBRCL",
+          "name": "Chapter 5 - Asia in Ancient Times",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/23ROEl4LYKiIjTyvfkBRCL"
+        },
+        {
+          "id": "71H3pfmpvo3NUZvKJvBKYa",
+          "name": "Chapter 6 - Mediterranean Peoples",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/71H3pfmpvo3NUZvKJvBKYa"
+        },
+        {
+          "id": "32FDHGzhWm8ERzqUxvHbHV",
+          "name": "Chapter 7 - Experiencing the Roman Empire",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/32FDHGzhWm8ERzqUxvHbHV"
+        },
+        {
+          "id": "4R1qEudIvChafdnq8rFMB0",
+          "name": "Chapter 8 - The Americas in Ancient Times",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/4R1qEudIvChafdnq8rFMB0"
+        },
+        {
+          "id": "1xdf3Ylb0wvLj8jxzCmMLN",
+          "name": "Chapter 9 - Africa in Ancient Times",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/1xdf3Ylb0wvLj8jxzCmMLN"
+        },
+        {
+          "id": "2IISPc29FUX3dU7slVA5s4",
+          "name": "Chapter 10 - Empires of Faith",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/2IISPc29FUX3dU7slVA5s4"
+        },
+        {
+          "id": "04soQma6pOPi8ORKDpWeOh",
+          "name": "Chapter 11 - The Rise of Islam and the Caliphates",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/04soQma6pOPi8ORKDpWeOh"
+        },
+        {
+          "id": "5JSgFxPjqAtZ99bK2k0WWu",
+          "name": "Chapter 12 - India, the Indian Ocean Basin, and East Asia",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/5JSgFxPjqAtZ99bK2k0WWu"
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Business 2e",
+      "total": 12,
+      "online": 12,
+      "offline": 0,
+      "episodes": [
+        {
+          "id": "4AGkK3SCKogbB3gTMR2dyK",
+          "name": "Appendix A \u2022 Understanding the Legal and Tax Environment",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/4AGkK3SCKogbB3gTMR2dyK"
+        },
+        {
+          "id": "1TosTNrjzQSQodD8aTY6w5",
+          "name": "17. Your Career in Business",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/1TosTNrjzQSQodD8aTY6w5"
+        },
+        {
+          "id": "0OV1W2N7KYuojtuMyiZlvQ",
+          "name": "16. Understanding Financial Management and Securities Markets",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/0OV1W2N7KYuojtuMyiZlvQ"
+        },
+        {
+          "id": "6AGzLqzHO8fJDGV7SEXYO6",
+          "name": "15. Understanding Money and Financial Institutions",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/6AGzLqzHO8fJDGV7SEXYO6"
+        },
+        {
+          "id": "5gVqikEP5HBkOHEHx8w7yE",
+          "name": "14. Using Financial Information and Accounting",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/5gVqikEP5HBkOHEHx8w7yE"
+        },
+        {
+          "id": "74FAxJklEd8Bj1wSvRFOWg",
+          "name": "13. Using Technology to Manage Information",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/74FAxJklEd8Bj1wSvRFOWg"
+        },
+        {
+          "id": "6dlb7FBkk9qbYb1YNwUzax",
+          "name": "12. Distributing and Promoting Products and Services",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/6dlb7FBkk9qbYb1YNwUzax"
+        },
+        {
+          "id": "4SnQSNPmGny4OdmHUb0mvl",
+          "name": "11. Creating Products and Pricing Strategies to Meet Customers' Needs",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/4SnQSNPmGny4OdmHUb0mvl"
+        },
+        {
+          "id": "2s8pjDqMG7fBnB5KRHSlXT",
+          "name": "10. Achieving World-Class Operations Management",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/2s8pjDqMG7fBnB5KRHSlXT"
+        },
+        {
+          "id": "7shShWpLA1ncyNIRZJaEpg",
+          "name": "09. Motivating Employees",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/7shShWpLA1ncyNIRZJaEpg"
+        },
+        {
+          "id": "5Dmd2Mms0vVTcWR8cgf4kN",
+          "name": "08. Managing Human Resources and Labor Relations",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/5Dmd2Mms0vVTcWR8cgf4kN"
+        },
+        {
+          "id": "0iBdrXMtGVUpxB8PxLWsHb",
+          "name": "07. Designing Organizational Structures",
+          "is_playable": true,
+          "reason": "None",
+          "external_url": "https://open.spotify.com/episode/0iBdrXMtGVUpxB8PxLWsHb"
+        }
+      ]
+    }
+  ]
 }
