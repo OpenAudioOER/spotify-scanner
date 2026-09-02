@@ -27,29 +27,26 @@ def get_spotify_access_token(client_id: str, client_secret: str) -> str:
         
     return response.json()["access_token"]
 
-def fetch_show_details(access_token: str, show_id: str, market: str = "US"):
-    """Fetches show metadata (title, publisher, images) and all episodes."""
+def fetch_show_episodes(access_token: str, show_id: str, fallback_name: str, market: str = "US"):
+    """Fetches episodes for a show directly."""
     headers = {"Authorization": f"Bearer {access_token}"}
     
-    # 1. Fetch Show Header
-    show_url = f"{SPOTIFY_API_BASE}/shows/{show_id}?market={market}"
-    res = requests.get(show_url, headers=headers)
-    if res.status_code == 404:
-        print(f"⚠️ Show ID '{show_id}' not found (404).")
-        return None, "Unknown Show", []
-    res.raise_for_status()
-    show_data = res.json()
-    show_name = show_data.get("name", f"Show ({show_id})")
+    # Try getting show info
+    show_name = fallback_name
+    show_res = requests.get(f"{SPOTIFY_API_BASE}/shows/{show_id}?market={market}", headers=headers)
+    if show_res.status_code == 200:
+        show_name = show_res.json().get("name", fallback_name)
+    else:
+        print(f"⚠️ Notice: GET /shows/{show_id} returned {show_res.status_code} ({show_res.text[:100]}). Falling back to direct episode fetch.")
 
-    # 2. Fetch Episodes (Paginated)
     episodes = []
     episodes_url = f"{SPOTIFY_API_BASE}/shows/{show_id}/episodes?market={market}&limit=50"
     
     while episodes_url:
         ep_res = requests.get(episodes_url, headers=headers)
         if ep_res.status_code != 200:
-            print(f"⚠️ Warning: Could not fetch episodes page ({ep_res.status_code}): {ep_res.text}")
-            break
+            print(f"❌ Could not fetch episodes for show ID '{show_id}' ({ep_res.status_code}): {ep_res.text}")
+            return False, show_name, []
         ep_data = ep_res.json()
         
         for item in ep_data.get("items", []):
@@ -180,11 +177,12 @@ def main():
     
     for show_item in shows_config:
         spotify_id = show_item["spotify_id"]
+        fallback_name = show_item.get("name", f"Show ({spotify_id})")
         
-        found, real_show_name, episodes = fetch_show_details(access_token, spotify_id)
+        found, real_show_name, episodes = fetch_show_episodes(access_token, spotify_id, fallback_name)
             
         if not found:
-            print(f"❌ Could not fetch content for show ID '{spotify_id}'.")
+            print(f"❌ Could not fetch content for show ID '{spotify_id}'. Skipping.")
             continue
             
         print(f"\nScanning SHOW: '{real_show_name}' (ID: {spotify_id})...")
