@@ -2,7 +2,6 @@ import os
 import sys
 import json
 import re
-import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 import requests
 
@@ -13,33 +12,7 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 }
 
-def audit_rss_feed(rss_url: str):
-    """Fetches RSS XML and returns set of episode titles / GUIDs present in feed."""
-    try:
-        res = requests.get(rss_url, headers=HEADERS, timeout=15)
-        if res.status_code != 200:
-            print(f"⚠️ RSS Feed HTTP Error ({res.status_code}) for {rss_url}")
-            return None, set()
-            
-        root = ET.fromstring(res.content)
-        channel = root.find("channel")
-        feed_title = channel.findtext("title", "Unknown Feed") if channel is not None else "Unknown Feed"
-        
-        present_titles = set()
-        for item in root.findall(".//item"):
-            title = item.findtext("title", "").strip().lower()
-            guid = item.findtext("guid", "").strip()
-            if title:
-                present_titles.add(title)
-            if guid:
-                present_titles.add(guid.lower())
-                
-        return feed_title, present_titles
-    except Exception as e:
-        print(f"❌ Error fetching/parsing RSS feed {rss_url}: {e}")
-        return None, set()
-
-def audit_spotify_web_page(spotify_url: str):
+def audit_spotify_episode(spotify_url: str):
     """Scrapes individual Spotify web page to check if episode is online or 404/taken down."""
     try:
         res = requests.get(spotify_url, headers=HEADERS, timeout=10)
@@ -49,7 +22,6 @@ def audit_spotify_web_page(spotify_url: str):
             return False, f"HTTP Status {res.status_code}"
             
         html = res.text.lower()
-        # Spotify web player cues for taken down content
         if "content not available" in html or "this content is unavailable" in html or "page not found" in html:
             return False, "Content Unavailable on Spotify Web Player"
             
@@ -58,7 +30,7 @@ def audit_spotify_web_page(spotify_url: str):
         return False, f"Network Error: {e}"
 
 def send_resend_alert(api_key: str, to_email: str, from_email: str, newly_offline: list):
-    subject = f"🚨 OpenAudio Alert: {len(newly_offline)} Chapter(s) Offline!"
+    subject = f"🚨 OpenAudio Alert: {len(newly_offline)} Spotify Chapter(s) Offline!"
     
     rows = ""
     for item in newly_offline:
@@ -74,12 +46,12 @@ def send_resend_alert(api_key: str, to_email: str, from_email: str, newly_offlin
     html_content = f"""
     <div style="font-family: Arial, sans-serif; max-width: 700px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
       <div style="background-color: #d9534f; color: white; padding: 20px; text-align: center;">
-        <h2 style="margin: 0;">🚨 Chapter Availability Alert</h2>
+        <h2 style="margin: 0;">🚨 Spotify Chapter Offline Alert</h2>
         <p style="margin: 5px 0 0 0;">OpenAudio Daily Master Audit</p>
       </div>
       
       <div style="padding: 20px; background-color: #ffffff;">
-        <p>The daily audit detected that <strong>{len(newly_offline)} baseline chapter(s)</strong> are missing or unplayable:</p>
+        <p>The daily audit detected that <strong>{len(newly_offline)} baseline chapter(s)</strong> are unplayable or taken down:</p>
         
         <table style="width: 100%; border-collapse: collapse; text-align: left; margin-top: 15px;">
           <thead>
@@ -154,15 +126,10 @@ def main():
     
     for show in shows_config:
         show_name = show.get("name", "Unnamed Show")
-        rss_url = show.get("rss_url")
         expected_episodes = show.get("expected_episodes", [])
         
-        print(f"\nAuditing Show: '{show_name}' ({len(expected_episodes)} expected baseline chapters)...")
+        print(f"\nAuditing Show: '{show_name}' ({len(expected_episodes)} baseline chapters)...")
         
-        rss_title, rss_present_set = (None, set())
-        if rss_url and not rss_url.startswith("REPLACE_"):
-            rss_title, rss_present_set = audit_rss_feed(rss_url)
-            
         show_online = 0
         show_offline = 0
         processed_episodes = []
@@ -172,25 +139,7 @@ def main():
             title = exp_ep.get("title", f"Chapter {idx}")
             spotify_url = exp_ep.get("spotify_url", "")
             
-            is_playable = True
-            reason = "None"
-            
-            # 1. Check if present in RSS feed (if RSS URL provided)
-            if rss_present_set:
-                t_lower = title.lower()
-                id_lower = ep_id.lower()
-                # Check if title or ID is in RSS feed
-                found_in_rss = any(t_lower in item or item in t_lower or id_lower in item for item in rss_present_set)
-                if not found_in_rss:
-                    is_playable = False
-                    reason = "Missing from RSS feed (Delisted/Removed)"
-                    
-            # 2. Check Spotify Web Page directly if URL provided
-            if is_playable and spotify_url and not spotify_url.startswith("REPLACE_"):
-                web_online, web_reason = audit_spotify_web_page(spotify_url)
-                if not web_online:
-                    is_playable = False
-                    reason = web_reason
+            is_playable, reason = audit_spotify_episode(spotify_url)
                     
             audit_results["total_chapters"] += 1
             if is_playable:
@@ -204,7 +153,7 @@ def main():
                         "show_name": show_name,
                         "title": title,
                         "reason": reason,
-                        "url": spotify_url or rss_url
+                        "url": spotify_url
                     })
                     
             processed_episodes.append({
