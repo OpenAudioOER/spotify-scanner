@@ -33,14 +33,6 @@
       padding: 24px;
       margin-bottom: 24px;
     }
-    .badge-online {
-      background-color: #10b981;
-      color: #047857;
-    }
-    .badge-offline {
-      background-color: #ef4444;
-      color: white;
-    }
     .table-dark-custom {
       --bs-table-bg: #1e293b;
       --bs-table-color: #cbd5e1;
@@ -59,6 +51,11 @@
       background-color: #1ed760;
       color: white;
     }
+    .action-btn {
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
   </style>
 </head>
 <body>
@@ -68,7 +65,12 @@
       <span class="navbar-brand mb-0 h1">
         🎧 OpenAudio • Spotify Availability Dashboard
       </span>
-      <span class="text-secondary small" id="last-updated">Checking status...</span>
+      <div class="d-flex align-items-center gap-3">
+        <span class="text-secondary small d-none d-md-inline" id="last-updated">Checking status...</span>
+        <a href="https://github.com/OpenAudioOER/spotify-scanner/actions/workflows/daily_scan.yml" target="_blank" class="btn btn-outline-success action-btn">
+          ⚡ Trigger Scan on GitHub ↗
+        </a>
+      </div>
     </div>
   </nav>
 
@@ -78,7 +80,7 @@
     <div class="row g-3 mb-4">
       <div class="col-md-4">
         <div class="stat-card">
-          <div class="text-secondary mb-1">Total Chapters Monitored</div>
+          <div class="text-secondary mb-1">Total Baseline Chapters</div>
           <div class="number text-info" id="total-chapters">0</div>
         </div>
       </div>
@@ -90,7 +92,7 @@
       </div>
       <div class="col-md-4">
         <div class="stat-card">
-          <div class="text-secondary mb-1">Offline / Flagged 🔴</div>
+          <div class="text-secondary mb-1">Offline / Missing 🔴</div>
           <div class="number text-danger" id="offline-chapters">0</div>
         </div>
       </div>
@@ -98,12 +100,12 @@
 
     <!-- Alert Banner (If Any Offline) -->
     <div id="alert-banner" class="alert alert-danger d-none" role="alert">
-      <strong>🚨 Attention:</strong> <span id="alert-text">Some chapters are unplayable or taken down on Spotify!</span>
+      <strong>🚨 Attention Required:</strong> <span id="alert-text">Some chapters are unplayable or taken down on Spotify!</span>
     </div>
 
     <!-- Search Input -->
     <div class="mb-4">
-      <input type="text" id="search-input" class="form-control form-control-lg bg-dark text-white border-secondary" placeholder="🔍 Search chapter title, course, or status...">
+      <input type="text" id="search-input" class="form-control form-control-lg bg-dark text-white border-secondary" placeholder="🔍 Search chapter title, course name, or status (e.g. 'Chapter 1' or 'Sociology')...">
     </div>
 
     <!-- Shows List Container -->
@@ -119,7 +121,7 @@
   <script>
     async function loadStatus() {
       try {
-        const res = await fetch('status.json');
+        const res = await fetch('status.json?cache_bust=' + Date.now());
         if (!res.ok) throw new Error('status.json not found');
         const data = await res.json();
         
@@ -130,7 +132,7 @@
 
         if (data.offline_chapters > 0) {
           document.getElementById('alert-banner').classList.remove('d-none');
-          document.getElementById('alert-text').innerText = `${data.offline_chapters} chapter(s) are currently unplayable or flagged on Spotify!`;
+          document.getElementById('alert-text').innerText = `${data.offline_chapters} chapter(s) are currently unplayable or flagged on Spotify! See red highlighted items below.`;
         }
 
         renderShows(data.shows);
@@ -138,14 +140,14 @@
         // Search Filter
         document.getElementById('search-input').addEventListener('input', (e) => {
           const query = e.target.value.toLowerCase();
-          filterShows(data.shows, query);
+          filterShows(query);
         });
 
       } catch (err) {
         document.getElementById('shows-container').innerHTML = `
           <div class="alert alert-warning text-center">
             <h5>No Audit Data Available Yet</h5>
-            <p class="mb-0">The initial Spotify daily scan has not been triggered yet. Please run the scanner workflow on GitHub.</p>
+            <p class="mb-0">Please run the scanner workflow on GitHub.</p>
           </div>
         `;
       }
@@ -166,14 +168,19 @@
         
         let rowsHtml = '';
         show.episodes.forEach(ep => {
-          const statusBadge = ep.is_playable 
+          const isOnline = ep.is_playable;
+          const statusBadge = isOnline 
             ? '<span class="badge bg-success">Online 🟢</span>' 
-            : '<span class="badge bg-danger">Offline 🔴</span>';
+            : '<span class="badge bg-danger">Offline / Missing 🔴</span>';
 
-          const reasonText = ep.is_playable ? 'None' : `<span class="text-danger font-weight-bold">${ep.reason}</span>`;
+          const reasonText = isOnline 
+            ? '<span class="text-secondary">Normal</span>' 
+            : `<span class="text-danger fw-bold">${ep.reason}</span>`;
+
+          const rowBgClass = isOnline ? '' : 'table-danger text-dark';
 
           rowsHtml += `
-            <tr class="episode-row" data-search="${ep.name.toLowerCase()} ${show.name.toLowerCase()} ${ep.is_playable ? 'online' : 'offline'}">
+            <tr class="episode-row ${rowBgClass}" data-search="${ep.name.toLowerCase()} ${show.name.toLowerCase()} ${isOnline ? 'online' : 'offline'}">
               <td class="fw-bold">${ep.name}</td>
               <td>${statusBadge}</td>
               <td>${reasonText}</td>
@@ -186,20 +193,20 @@
 
         card.innerHTML = `
           <div class="d-flex justify-content-between align-items-center mb-3">
-            <h4 class="m-0">${show.name}</h4>
+            <h4 class="m-0 text-white">${show.name} <span class="fs-6 text-secondary">(${show.episodes.length} Chapters)</span></h4>
             <div>
               <span class="badge bg-success me-1">${show.online} Online</span>
-              <span class="badge bg-danger">${show.offline} Offline</span>
+              ${show.offline > 0 ? `<span class="badge bg-danger">${show.offline} Offline</span>` : ''}
             </div>
           </div>
           <div class="table-responsive">
             <table class="table table-dark-custom align-middle">
               <thead>
                 <tr>
-                  <th>Chapter Title</th>
-                  <th>Status</th>
-                  <th>Issue Details</th>
-                  <th class="text-end">Link</th>
+                  <th style="width: 45%;">Chapter Title</th>
+                  <th style="width: 20%;">Status</th>
+                  <th style="width: 20%;">Issue Details</th>
+                  <th class="text-end" style="width: 15%;">Link</th>
                 </tr>
               </thead>
               <tbody>
@@ -212,7 +219,7 @@
       });
     }
 
-    function filterShows(shows, query) {
+    function filterShows(query) {
       document.querySelectorAll('.episode-row').forEach(row => {
         const text = row.getAttribute('data-search');
         if (text.includes(query)) {
