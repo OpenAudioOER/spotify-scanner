@@ -1,291 +1,196 @@
 [
   {
-    "name": "American Government 4e",
-    "expected_episodes": [
-      {
-        "id": "7gXcSWYXDDiJF5I7EuC2Py",
-        "title": "Government shapes nearly every part of your daily life, even when you don\u2019t notice it.",
-        "spotify_url": "https://open.spotify.com/episode/7gXcSWYXDDiJF5I7EuC2Py"
-      },
-      {
-        "id": "0f6ganMrGPa5E8urOAEPM0",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/0f6ganMrGPa5E8urOAEPM0"
-      },
-      {
-        "id": "065r3X2go5u4fzs1XM5cv7",
-        "title": "Power in the United States is divided like a shared puzzle between national and state governments.",
-        "spotify_url": "https://open.spotify.com/episode/065r3X2go5u4fzs1XM5cv7"
-      },
-      {
-        "id": "4R13IafU9E4nkXOeqQuDAK",
-        "title": "Your freedoms, including speech, religion, and privacy, are protected but often debated and challenged.",
-        "spotify_url": "https://open.spotify.com/episode/4R13IafU9E4nkXOeqQuDAK"
-      },
-      {
-        "id": "0SFIWtFuE7ZOQMkCIH8p56",
-        "title": "The struggle for equality has shaped American history and continues to influence modern society.",
-        "spotify_url": "https://open.spotify.com/episode/0SFIWtFuE7ZOQMkCIH8p56"
-      },
-      {
-        "id": "3EG4Zy96UXyNdOtMl3YNHr",
-        "title": "The Politics of Public Opinion",
-        "spotify_url": "https://open.spotify.com/episode/3EG4Zy96UXyNdOtMl3YNHr"
-      },
-      {
-        "id": "4e4Hc7j2nbcqdHuLMCoi5v",
-        "title": "Voting and Elections",
-        "spotify_url": "https://open.spotify.com/episode/4e4Hc7j2nbcqdHuLMCoi5v"
-      },
-      {
-        "id": "1OZLCn8WMSwld0OwKvUg5z",
-        "title": "The Media",
-        "spotify_url": "https://open.spotify.com/episode/1OZLCn8WMSwld0OwKvUg5z"
-      },
-      {
-        "id": "0kt5qhSMrkXLZTQGMdnmo4",
-        "title": "Political Parties",
-        "spotify_url": "https://open.spotify.com/episode/0kt5qhSMrkXLZTQGMdnmo4"
-      },
-      {
-        "id": "4TaLfffOLbUuUAYzoajEnU",
-        "title": "Interest Groups and Lobbying",
-        "spotify_url": "https://open.spotify.com/episode/4TaLfffOLbUuUAYzoajEnU"
-      },
-      {
-        "id": "6UlXCnpvlViknifD6BCzmC",
-        "title": "Congress",
-        "spotify_url": "https://open.spotify.com/episode/6UlXCnpvlViknifD6BCzmC"
-      },
-      {
-        "id": "15b5SCqEcRAeRSODqX3JaH",
-        "title": "The Presidency",
-        "spotify_url": "https://open.spotify.com/episode/15b5SCqEcRAeRSODqX3JaH"
-      },
-      {
-        "id": "5NfKeIcfscGluXAfAke2Gn",
-        "title": "The Courts",
-        "spotify_url": "https://open.spotify.com/episode/5NfKeIcfscGluXAfAke2Gn"
-      },
-      {
-        "id": "5Q6esdHh1rqxjFi53yraRD",
-        "title": "State and Local Government",
-        "spotify_url": "https://open.spotify.com/episode/5Q6esdHh1rqxjFi53yraRD"
-      },
-      {
-        "id": "7oSlV2OeQYXs6nG3ovJ2oh",
-        "title": "The Bureaucracy",
-        "spotify_url": "https://open.spotify.com/episode/7oSlV2OeQYXs6nG3ovJ2oh"
-      },
-      {
-        "id": "196aMPqhDDrg1eDpSm07F4",
-        "title": "Domestic Policy",
-        "spotify_url": "https://open.spotify.com/episode/196aMPqhDDrg1eDpSm07F4"
-      },
-      {
-        "id": "2kszz4fqm8LTNMEW4HEWvP",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/2kszz4fqm8LTNMEW4HEWvP"
-      }
-    ]
-  },
-  {
     "name": "American Government 3e",
     "expected_episodes": [
       {
+        "id": "3OKzW22iXPb2oklS2d1cMl",
+        "title": "Trailer",
+        "spotify_url": "https://open.spotify.com/episode/3OKzW22iXPb2oklS2d1cMl"
+      },
+      {
         "id": "3Nbuw8ZeBoS8Dq8lGvbj4p",
-        "title": "Government shapes nearly every part of your daily life, even when you don\u2019t notice it.",
+        "title": "Chapter 1 - American Government and Civic Engagement",
         "spotify_url": "https://open.spotify.com/episode/3Nbuw8ZeBoS8Dq8lGvbj4p"
       },
       {
         "id": "2LboVLpaeko7geJAe7dRYI",
-        "title": "Chapter",
+        "title": "Chapter 2 - The Constitution and Its Origins",
         "spotify_url": "https://open.spotify.com/episode/2LboVLpaeko7geJAe7dRYI"
       },
       {
         "id": "1fa0wi29tNt62pcfIcaA5D",
-        "title": "Power in the United States is divided like a shared puzzle between national and state governments.",
+        "title": "Chapter 3 - American Federalism",
         "spotify_url": "https://open.spotify.com/episode/1fa0wi29tNt62pcfIcaA5D"
       },
       {
         "id": "4Z21MMTezh3X4EMhDfETje",
-        "title": "Your freedoms, including speech, religion, and privacy, are protected but often debated and challenged.",
+        "title": "Chapter 4 - Civil Liberties",
         "spotify_url": "https://open.spotify.com/episode/4Z21MMTezh3X4EMhDfETje"
       },
       {
         "id": "1aORzvdyPcTPflaRU45Chr",
-        "title": "The struggle for equality has shaped American history and continues to influence modern society.",
+        "title": "Chapter 5 - Civil Rights",
         "spotify_url": "https://open.spotify.com/episode/1aORzvdyPcTPflaRU45Chr"
       },
       {
         "id": "7hahi5wUipLQp9cYUPDL2i",
-        "title": "The Politics of Public Opinion",
+        "title": "Chapter 6 - The Politics of Public Opinion",
         "spotify_url": "https://open.spotify.com/episode/7hahi5wUipLQp9cYUPDL2i"
       },
       {
         "id": "2X9BRTFutBgyA2AJXYDf1b",
-        "title": "Voting and Elections",
+        "title": "Chapter 7 - Voting and Elections",
         "spotify_url": "https://open.spotify.com/episode/2X9BRTFutBgyA2AJXYDf1b"
       },
       {
         "id": "4ZJTCy1NQlNlmoSanXB2Hr",
-        "title": "The Media",
+        "title": "Chapter 8 - The Media",
         "spotify_url": "https://open.spotify.com/episode/4ZJTCy1NQlNlmoSanXB2Hr"
       },
       {
         "id": "02ShiQenjI96P5ONjw4QmJ",
-        "title": "Political Parties",
+        "title": "Chapter 9 - Political Parties",
         "spotify_url": "https://open.spotify.com/episode/02ShiQenjI96P5ONjw4QmJ"
       },
       {
         "id": "21cb1xivm1aYmB8Jd3gdPA",
-        "title": "Interest Groups and Lobbying",
+        "title": "Chapter 10 - Interest Groups and Lobbying",
         "spotify_url": "https://open.spotify.com/episode/21cb1xivm1aYmB8Jd3gdPA"
       },
       {
         "id": "7u36Wip1F2CWS3m3mRKRjF",
-        "title": "Congress",
+        "title": "Chapter 11 - Congress",
         "spotify_url": "https://open.spotify.com/episode/7u36Wip1F2CWS3m3mRKRjF"
-      },
-      {
-        "id": "5j4Tho7gi1EKhIy9RPtObQ",
-        "title": "The Presidency",
-        "spotify_url": "https://open.spotify.com/episode/5j4Tho7gi1EKhIy9RPtObQ"
-      },
-      {
-        "id": "3cz8xND1haFlz2irXuwdc0",
-        "title": "The Courts",
-        "spotify_url": "https://open.spotify.com/episode/3cz8xND1haFlz2irXuwdc0"
-      },
-      {
-        "id": "1aSQxcCHUzPPJM768mT5o3",
-        "title": "State and Local Government",
-        "spotify_url": "https://open.spotify.com/episode/1aSQxcCHUzPPJM768mT5o3"
-      },
-      {
-        "id": "6EG8JTBs2NuTJQxF3jkobm",
-        "title": "The Bureaucracy",
-        "spotify_url": "https://open.spotify.com/episode/6EG8JTBs2NuTJQxF3jkobm"
-      },
-      {
-        "id": "47I76Y2VekJ5vP4kGkiOcY",
-        "title": "Domestic Policy",
-        "spotify_url": "https://open.spotify.com/episode/47I76Y2VekJ5vP4kGkiOcY"
-      },
-      {
-        "id": "6x9eGIQevjdsjtjT8TJLSo",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/6x9eGIQevjdsjtjT8TJLSo"
       }
     ]
   },
   {
-    "name": "Introduction Sociology 3E",
+    "name": "American Government 4e",
+    "expected_episodes": [
+      {
+        "id": "7gXcSWYXDDiJF5I7EuC2Py",
+        "title": "01. American Government and Civic Engagement",
+        "spotify_url": "https://open.spotify.com/episode/7gXcSWYXDDiJF5I7EuC2Py"
+      },
+      {
+        "id": "0f6ganMrGPa5E8urOAEPM0",
+        "title": "02. The Constitution and Its Origins",
+        "spotify_url": "https://open.spotify.com/episode/0f6ganMrGPa5E8urOAEPM0"
+      },
+      {
+        "id": "065r3X2go5u4fzs1XM5cv7",
+        "title": "03. American Federalism",
+        "spotify_url": "https://open.spotify.com/episode/065r3X2go5u4fzs1XM5cv7"
+      },
+      {
+        "id": "4R13IafU9E4nkXOeqQuDAK",
+        "title": "04. Civil Liberties",
+        "spotify_url": "https://open.spotify.com/episode/4R13IafU9E4nkXOeqQuDAK"
+      },
+      {
+        "id": "0SFIWtFuE7ZOQMkCIH8p56",
+        "title": "05. Civil Rights",
+        "spotify_url": "https://open.spotify.com/episode/0SFIWtFuE7ZOQMkCIH8p56"
+      },
+      {
+        "id": "3EG4Zy96UXyNdOtMl3YNHr",
+        "title": "06. The Politics of Public Opinion",
+        "spotify_url": "https://open.spotify.com/episode/3EG4Zy96UXyNdOtMl3YNHr"
+      },
+      {
+        "id": "4e4Hc7j2nbcqdHuLMCoi5v",
+        "title": "07. Voting and Elections",
+        "spotify_url": "https://open.spotify.com/episode/4e4Hc7j2nbcqdHuLMCoi5v"
+      },
+      {
+        "id": "1OZLCn8WMSwld0OwKvUg5z",
+        "title": "08. The Media",
+        "spotify_url": "https://open.spotify.com/episode/1OZLCn8WMSwld0OwKvUg5z"
+      },
+      {
+        "id": "0kt5qhSMrkXLZTQGMdnmo4",
+        "title": "09. Political Parties",
+        "spotify_url": "https://open.spotify.com/episode/0kt5qhSMrkXLZTQGMdnmo4"
+      },
+      {
+        "id": "4TaLfffOLbUuUAYzoajEnU",
+        "title": "10. Interest Groups and Lobbying",
+        "spotify_url": "https://open.spotify.com/episode/4TaLfffOLbUuUAYzoajEnU"
+      },
+      {
+        "id": "6UlXCnpvlViknifD6BCzmC",
+        "title": "11. Congress",
+        "spotify_url": "https://open.spotify.com/episode/6UlXCnpvlViknifD6BCzmC"
+      },
+      {
+        "id": "15b5SCqEcRAeRSODqX3JaH",
+        "title": "12. The Presidency",
+        "spotify_url": "https://open.spotify.com/episode/15b5SCqEcRAeRSODqX3JaH"
+      }
+    ]
+  },
+  {
+    "name": "Introduction to Sociology 3e",
     "expected_episodes": [
       {
         "id": "2agJEPRBvQhu1E0XzQvnMH",
-        "title": "Chapter",
+        "title": "Chapter 1 - An Introduction to Sociology",
         "spotify_url": "https://open.spotify.com/episode/2agJEPRBvQhu1E0XzQvnMH"
       },
       {
         "id": "5CnwkVzUkG86yZGg6R95gd",
-        "title": "Chapter",
+        "title": "Chapter 2 - Sociological Research",
         "spotify_url": "https://open.spotify.com/episode/5CnwkVzUkG86yZGg6R95gd"
       },
       {
         "id": "14VfXq8qfhOnnRIq1Tjb3y",
-        "title": "Chapter",
+        "title": "Chapter 3 - Culture",
         "spotify_url": "https://open.spotify.com/episode/14VfXq8qfhOnnRIq1Tjb3y"
       },
       {
         "id": "4ZaWzmCqKxAp82FPkC2ROI",
-        "title": "Chapter",
+        "title": "Chapter 4 - Society and Social Interaction",
         "spotify_url": "https://open.spotify.com/episode/4ZaWzmCqKxAp82FPkC2ROI"
       },
       {
         "id": "0w5YO363Y3kFZnBo90S0cI",
-        "title": "Chapter",
+        "title": "Chapter 5 - Socialization",
         "spotify_url": "https://open.spotify.com/episode/0w5YO363Y3kFZnBo90S0cI"
       },
       {
         "id": "2Aarh1a4X5I8YLKcga6bV8",
-        "title": "Chapter",
+        "title": "Chapter 6 - Groups and Organization",
         "spotify_url": "https://open.spotify.com/episode/2Aarh1a4X5I8YLKcga6bV8"
       },
       {
         "id": "2rTXlbaWERVztqjIUgNJKV",
-        "title": "Chapter",
+        "title": "Chapter 7 - Deviance, Crime, and Social Control",
         "spotify_url": "https://open.spotify.com/episode/2rTXlbaWERVztqjIUgNJKV"
       },
       {
         "id": "15Kx3ufXmMvYyXD3IAwMIw",
-        "title": "Chapter",
+        "title": "Chapter 8 - Media and Technology",
         "spotify_url": "https://open.spotify.com/episode/15Kx3ufXmMvYyXD3IAwMIw"
       },
       {
         "id": "4NPvmJpiELKZVBDzCBnFIk",
-        "title": "Chapter",
+        "title": "Chapter 9 - Social Stratification in the United States",
         "spotify_url": "https://open.spotify.com/episode/4NPvmJpiELKZVBDzCBnFIk"
       },
       {
         "id": "3IYQzofNj136DGzexK8wv4",
-        "title": "Chapter",
+        "title": "Chapter 10 - Global Inequality",
         "spotify_url": "https://open.spotify.com/episode/3IYQzofNj136DGzexK8wv4"
       },
       {
         "id": "4ju9mgvf3Cxs1lKFItCxX1",
-        "title": "Chapter",
+        "title": "Chapter 11 - Race and Ethnicity",
         "spotify_url": "https://open.spotify.com/episode/4ju9mgvf3Cxs1lKFItCxX1"
       },
       {
         "id": "2TX80z7bdnFdT1J6Bt7QLb",
-        "title": "Chapter",
+        "title": "Chapter 12 - Gender, Sex, and Sexuality",
         "spotify_url": "https://open.spotify.com/episode/2TX80z7bdnFdT1J6Bt7QLb"
-      },
-      {
-        "id": "6mLqVrkhDJ1bye8YRurxLW",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/6mLqVrkhDJ1bye8YRurxLW"
-      },
-      {
-        "id": "0aKSW83oLPQ42Fb53oUBZw",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/0aKSW83oLPQ42Fb53oUBZw"
-      },
-      {
-        "id": "6loL8SLkeDy1K9kqub6M4S",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/6loL8SLkeDy1K9kqub6M4S"
-      },
-      {
-        "id": "1C5LOhntz5Wm2gaMtbMVfT",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/1C5LOhntz5Wm2gaMtbMVfT"
-      },
-      {
-        "id": "4uVGib2YWwJ40XysJaGuSL",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/4uVGib2YWwJ40XysJaGuSL"
-      },
-      {
-        "id": "1JMipBm5slmOy7GOWMvONG",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/1JMipBm5slmOy7GOWMvONG"
-      },
-      {
-        "id": "1o7u726cyWXhqwDbVJ0NDS",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/1o7u726cyWXhqwDbVJ0NDS"
-      },
-      {
-        "id": "3Ig2nL7J3DIdtHTHFGbCnY",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/3Ig2nL7J3DIdtHTHFGbCnY"
-      },
-      {
-        "id": "4d7qVKcJXeKXdNT783ZMqK",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/4d7qVKcJXeKXdNT783ZMqK"
       }
     ]
   },
@@ -294,163 +199,63 @@
     "expected_episodes": [
       {
         "id": "57CS8zEcpKrSR9obXUF4ME",
-        "title": "Chapter",
+        "title": "Chapter 1 - The Americas, Europe, and Africa Before 1492",
         "spotify_url": "https://open.spotify.com/episode/57CS8zEcpKrSR9obXUF4ME"
       },
       {
         "id": "6aFSyMpOZZuzM06T6zctID",
-        "title": "Chapter",
+        "title": "Chapter 2 - Early Globalization: The Atlantic World, 1492\u20131650",
         "spotify_url": "https://open.spotify.com/episode/6aFSyMpOZZuzM06T6zctID"
       },
       {
         "id": "472TfrXXOWuwxQmgV62pci",
-        "title": "Chapter",
+        "title": "Chapter 3 - Creating New Social Orders: Colonial Societies, 1500\u20131700",
         "spotify_url": "https://open.spotify.com/episode/472TfrXXOWuwxQmgV62pci"
       },
       {
         "id": "35aDrPRuLCUlGdKRis3JFO",
-        "title": "Chapter",
+        "title": "Chapter 4 - Rule Britannia! The English Empire, 1660\u20131763",
         "spotify_url": "https://open.spotify.com/episode/35aDrPRuLCUlGdKRis3JFO"
       },
       {
         "id": "1uKS5OoPOKjPLdy3zHx50a",
-        "title": "Chapter",
+        "title": "Chapter 5 - Imperial Reforms and Colonial Protests, 1763-1774",
         "spotify_url": "https://open.spotify.com/episode/1uKS5OoPOKjPLdy3zHx50a"
       },
       {
         "id": "2tbiKof0klkuvt8HuPaVPT",
-        "title": "Chapter",
+        "title": "Chapter 6 - America&#x27;s War for Independence, 1775-1783",
         "spotify_url": "https://open.spotify.com/episode/2tbiKof0klkuvt8HuPaVPT"
       },
       {
         "id": "6uc8VHcg3i7gu31NKqIGFc",
-        "title": "Chapter",
+        "title": "Chapter 7 - Creating Republican Governments, 1776\u20131790",
         "spotify_url": "https://open.spotify.com/episode/6uc8VHcg3i7gu31NKqIGFc"
       },
       {
         "id": "2MVPWDr5NlNfHqYuLZvF9c",
-        "title": "Chapter",
+        "title": "Chapter 8 - Growing Pains: The New Republic, 1790\u20131820",
         "spotify_url": "https://open.spotify.com/episode/2MVPWDr5NlNfHqYuLZvF9c"
       },
       {
         "id": "5euASbakrkGcNsE7HC5WB1",
-        "title": "Chapter",
+        "title": "Chapter 9 - Industrial Transformation in the North, 1800\u20131850",
         "spotify_url": "https://open.spotify.com/episode/5euASbakrkGcNsE7HC5WB1"
       },
       {
         "id": "3W34YS4G1KWDmLLKvXOoQj",
-        "title": "Chapter",
+        "title": "Chapter 10 - Jacksonian Democracy, 1820\u20131840",
         "spotify_url": "https://open.spotify.com/episode/3W34YS4G1KWDmLLKvXOoQj"
       },
       {
         "id": "75menM5UyFEGsvb4UxX51g",
-        "title": "Chapter",
+        "title": "Chapter 11 - A Nation on the Move: Westward Expansion, 1800\u20131860",
         "spotify_url": "https://open.spotify.com/episode/75menM5UyFEGsvb4UxX51g"
       },
       {
         "id": "3pjAsGZa0qz2B62L2vJmh6",
-        "title": "Chapter",
+        "title": "Chapter 12 - Cotton is King: The Antebellum South, 1800\u20131860",
         "spotify_url": "https://open.spotify.com/episode/3pjAsGZa0qz2B62L2vJmh6"
-      },
-      {
-        "id": "0OCtIhq1eVMVwu0g2Wouq9",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/0OCtIhq1eVMVwu0g2Wouq9"
-      },
-      {
-        "id": "2VqV4lF1DpwlzrlJw2w4BE",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/2VqV4lF1DpwlzrlJw2w4BE"
-      },
-      {
-        "id": "3DMvzCkIf1BtWL9jLjoV3r",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/3DMvzCkIf1BtWL9jLjoV3r"
-      },
-      {
-        "id": "6hMcXO40wifgqestdhh7tx",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/6hMcXO40wifgqestdhh7tx"
-      },
-      {
-        "id": "45muHnK86CIbEzxpYhH7VN",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/45muHnK86CIbEzxpYhH7VN"
-      },
-      {
-        "id": "0u6OsUKd7Yeaatw2rb0S5O",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/0u6OsUKd7Yeaatw2rb0S5O"
-      },
-      {
-        "id": "5yAFuqTcBGAFTZ0Q4q1R6V",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/5yAFuqTcBGAFTZ0Q4q1R6V"
-      },
-      {
-        "id": "4eCWfc5S0XBlSkTiEuQ2ht",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/4eCWfc5S0XBlSkTiEuQ2ht"
-      },
-      {
-        "id": "4ORSPhjoNAyYW55KVXpJTd",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/4ORSPhjoNAyYW55KVXpJTd"
-      },
-      {
-        "id": "07UhGbKPuwDolPpyzoz6U2",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/07UhGbKPuwDolPpyzoz6U2"
-      },
-      {
-        "id": "4yFibfdrM3MO3x9rmPhnBy",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/4yFibfdrM3MO3x9rmPhnBy"
-      },
-      {
-        "id": "6MXjf55LPlOQHDKd90t8H7",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/6MXjf55LPlOQHDKd90t8H7"
-      },
-      {
-        "id": "5h9PozuYqYuBSpSJUDvfs8",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/5h9PozuYqYuBSpSJUDvfs8"
-      },
-      {
-        "id": "3iSpGu2vsEtqikK7Z6GxtW",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/3iSpGu2vsEtqikK7Z6GxtW"
-      },
-      {
-        "id": "1iig31nQiGp8E3z2U4X6TT",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/1iig31nQiGp8E3z2U4X6TT"
-      },
-      {
-        "id": "6GevgdNbbiw4SRfsLfNxj4",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/6GevgdNbbiw4SRfsLfNxj4"
-      },
-      {
-        "id": "1eiL4jIPXCL1Y05uOWCTXZ",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/1eiL4jIPXCL1Y05uOWCTXZ"
-      },
-      {
-        "id": "5lFcICY1JPCJSYSmrcHmjf",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/5lFcICY1JPCJSYSmrcHmjf"
-      },
-      {
-        "id": "1WpCElNF0lwoEfxW70v0Xl",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/1WpCElNF0lwoEfxW70v0Xl"
-      },
-      {
-        "id": "5q2EUC3hQa08jFnsifbF3B",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/5q2EUC3hQa08jFnsifbF3B"
       }
     ]
   },
@@ -459,173 +264,128 @@
     "expected_episodes": [
       {
         "id": "5CNYVS5FEXbbsm2QLtzBbR",
-        "title": "Chapter",
+        "title": "Chapter 1 - Understanding the Past",
         "spotify_url": "https://open.spotify.com/episode/5CNYVS5FEXbbsm2QLtzBbR"
       },
       {
         "id": "339JY76S6HSBC81mPUaApU",
-        "title": "Chapter",
+        "title": "Chapter 2 - Early Humans",
         "spotify_url": "https://open.spotify.com/episode/339JY76S6HSBC81mPUaApU"
       },
       {
         "id": "6LcYfw8npZmFKIzZ7N38y4",
-        "title": "Chapter",
+        "title": "Chapter 3 - Early Civilizations and Urban Societies",
         "spotify_url": "https://open.spotify.com/episode/6LcYfw8npZmFKIzZ7N38y4"
       },
       {
         "id": "17oMGZVsA4ycMtJoqbfJno",
-        "title": "Chapter",
+        "title": "Chapter 4 - The Near East",
         "spotify_url": "https://open.spotify.com/episode/17oMGZVsA4ycMtJoqbfJno"
       },
       {
         "id": "23ROEl4LYKiIjTyvfkBRCL",
-        "title": "Chapter",
+        "title": "Chapter 5 - Asia in Ancient Times",
         "spotify_url": "https://open.spotify.com/episode/23ROEl4LYKiIjTyvfkBRCL"
       },
       {
         "id": "71H3pfmpvo3NUZvKJvBKYa",
-        "title": "Chapter",
+        "title": "Chapter 6 - Mediterranean Peoples",
         "spotify_url": "https://open.spotify.com/episode/71H3pfmpvo3NUZvKJvBKYa"
       },
       {
         "id": "32FDHGzhWm8ERzqUxvHbHV",
-        "title": "Chapter",
+        "title": "Chapter 7 - Experiencing the Roman Empire",
         "spotify_url": "https://open.spotify.com/episode/32FDHGzhWm8ERzqUxvHbHV"
       },
       {
         "id": "4R1qEudIvChafdnq8rFMB0",
-        "title": "Chapter",
+        "title": "Chapter 8 - The Americas in Ancient Times",
         "spotify_url": "https://open.spotify.com/episode/4R1qEudIvChafdnq8rFMB0"
       },
       {
         "id": "1xdf3Ylb0wvLj8jxzCmMLN",
-        "title": "Chapter",
+        "title": "Chapter 9 - Africa in Ancient Times",
         "spotify_url": "https://open.spotify.com/episode/1xdf3Ylb0wvLj8jxzCmMLN"
       },
       {
         "id": "2IISPc29FUX3dU7slVA5s4",
-        "title": "Chapter",
+        "title": "Chapter 10 - Empires of Faith",
         "spotify_url": "https://open.spotify.com/episode/2IISPc29FUX3dU7slVA5s4"
       },
       {
         "id": "04soQma6pOPi8ORKDpWeOh",
-        "title": "Chapter",
+        "title": "Chapter 11 - The Rise of Islam and the Caliphates",
         "spotify_url": "https://open.spotify.com/episode/04soQma6pOPi8ORKDpWeOh"
       },
       {
         "id": "5JSgFxPjqAtZ99bK2k0WWu",
-        "title": "Chapter",
+        "title": "Chapter 12 - India, the Indian Ocean Basin, and East Asia",
         "spotify_url": "https://open.spotify.com/episode/5JSgFxPjqAtZ99bK2k0WWu"
-      },
-      {
-        "id": "3ocjvv6xKczQC97SxWDkUc",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/3ocjvv6xKczQC97SxWDkUc"
-      },
-      {
-        "id": "2S4k3dEwfDWTv1Ynb0WzKT",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/2S4k3dEwfDWTv1Ynb0WzKT"
-      },
-      {
-        "id": "01x1tDqmX53qkpzlSqyrak",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/01x1tDqmX53qkpzlSqyrak"
       }
     ]
   },
   {
-    "name": "Introduction Business 2E",
+    "name": "Introduction to Business 2e",
     "expected_episodes": [
       {
-        "id": "7HOiM3L5he2hcgFav70Zqi",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/7HOiM3L5he2hcgFav70Zqi"
-      },
-      {
-        "id": "6oy5zZHjgMlpRDxG0mw5gS",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/6oy5zZHjgMlpRDxG0mw5gS"
-      },
-      {
-        "id": "0Usfmoxi3a3xJXdMVLgSb5",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/0Usfmoxi3a3xJXdMVLgSb5"
-      },
-      {
-        "id": "1Vl36wUSMfFVdgevkT4yy8",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/1Vl36wUSMfFVdgevkT4yy8"
-      },
-      {
-        "id": "1ST03BIE1sQPBV2S1xZLoG",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/1ST03BIE1sQPBV2S1xZLoG"
-      },
-      {
-        "id": "32BZPYTOOrVYyvzBpbHCm6",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/32BZPYTOOrVYyvzBpbHCm6"
-      },
-      {
-        "id": "0iBdrXMtGVUpxB8PxLWsHb",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/0iBdrXMtGVUpxB8PxLWsHb"
-      },
-      {
-        "id": "5Dmd2Mms0vVTcWR8cgf4kN",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/5Dmd2Mms0vVTcWR8cgf4kN"
-      },
-      {
-        "id": "7shShWpLA1ncyNIRZJaEpg",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/7shShWpLA1ncyNIRZJaEpg"
-      },
-      {
-        "id": "2s8pjDqMG7fBnB5KRHSlXT",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/2s8pjDqMG7fBnB5KRHSlXT"
-      },
-      {
-        "id": "4SnQSNPmGny4OdmHUb0mvl",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/4SnQSNPmGny4OdmHUb0mvl"
-      },
-      {
-        "id": "6dlb7FBkk9qbYb1YNwUzax",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/6dlb7FBkk9qbYb1YNwUzax"
-      },
-      {
-        "id": "74FAxJklEd8Bj1wSvRFOWg",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/74FAxJklEd8Bj1wSvRFOWg"
-      },
-      {
-        "id": "5gVqikEP5HBkOHEHx8w7yE",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/5gVqikEP5HBkOHEHx8w7yE"
-      },
-      {
-        "id": "6AGzLqzHO8fJDGV7SEXYO6",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/6AGzLqzHO8fJDGV7SEXYO6"
-      },
-      {
-        "id": "0OV1W2N7KYuojtuMyiZlvQ",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/0OV1W2N7KYuojtuMyiZlvQ"
+        "id": "4AGkK3SCKogbB3gTMR2dyK",
+        "title": "Appendix A \u2022 Understanding the Legal and Tax Environment",
+        "spotify_url": "https://open.spotify.com/episode/4AGkK3SCKogbB3gTMR2dyK"
       },
       {
         "id": "1TosTNrjzQSQodD8aTY6w5",
-        "title": "Chapter",
+        "title": "17. Your Career in Business",
         "spotify_url": "https://open.spotify.com/episode/1TosTNrjzQSQodD8aTY6w5"
       },
       {
-        "id": "4AGkK3SCKogbB3gTMR2dyK",
-        "title": "Chapter",
-        "spotify_url": "https://open.spotify.com/episode/4AGkK3SCKogbB3gTMR2dyK"
+        "id": "0OV1W2N7KYuojtuMyiZlvQ",
+        "title": "16. Understanding Financial Management and Securities Markets",
+        "spotify_url": "https://open.spotify.com/episode/0OV1W2N7KYuojtuMyiZlvQ"
+      },
+      {
+        "id": "6AGzLqzHO8fJDGV7SEXYO6",
+        "title": "15. Understanding Money and Financial Institutions",
+        "spotify_url": "https://open.spotify.com/episode/6AGzLqzHO8fJDGV7SEXYO6"
+      },
+      {
+        "id": "5gVqikEP5HBkOHEHx8w7yE",
+        "title": "14. Using Financial Information and Accounting",
+        "spotify_url": "https://open.spotify.com/episode/5gVqikEP5HBkOHEHx8w7yE"
+      },
+      {
+        "id": "74FAxJklEd8Bj1wSvRFOWg",
+        "title": "13. Using Technology to Manage Information",
+        "spotify_url": "https://open.spotify.com/episode/74FAxJklEd8Bj1wSvRFOWg"
+      },
+      {
+        "id": "6dlb7FBkk9qbYb1YNwUzax",
+        "title": "12. Distributing and Promoting Products and Services",
+        "spotify_url": "https://open.spotify.com/episode/6dlb7FBkk9qbYb1YNwUzax"
+      },
+      {
+        "id": "4SnQSNPmGny4OdmHUb0mvl",
+        "title": "11. Creating Products and Pricing Strategies to Meet Customers&#x27; Needs",
+        "spotify_url": "https://open.spotify.com/episode/4SnQSNPmGny4OdmHUb0mvl"
+      },
+      {
+        "id": "2s8pjDqMG7fBnB5KRHSlXT",
+        "title": "10. Achieving World-Class Operations Management",
+        "spotify_url": "https://open.spotify.com/episode/2s8pjDqMG7fBnB5KRHSlXT"
+      },
+      {
+        "id": "7shShWpLA1ncyNIRZJaEpg",
+        "title": "09. Motivating Employees",
+        "spotify_url": "https://open.spotify.com/episode/7shShWpLA1ncyNIRZJaEpg"
+      },
+      {
+        "id": "5Dmd2Mms0vVTcWR8cgf4kN",
+        "title": "08. Managing Human Resources and Labor Relations",
+        "spotify_url": "https://open.spotify.com/episode/5Dmd2Mms0vVTcWR8cgf4kN"
+      },
+      {
+        "id": "0iBdrXMtGVUpxB8PxLWsHb",
+        "title": "07. Designing Organizational Structures",
+        "spotify_url": "https://open.spotify.com/episode/0iBdrXMtGVUpxB8PxLWsHb"
       }
     ]
   }
