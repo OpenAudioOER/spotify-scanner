@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAudio Spotify Chapter Status</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .stat-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .stat-card .number {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+    .show-section {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .badge-online {
+      background-color: #10b981;
+      color: #047857;
+    }
+    .badge-offline {
+      background-color: #ef4444;
+      color: white;
+    }
+    .table-dark-custom {
+      --bs-table-bg: #1e293b;
+      --bs-table-color: #cbd5e1;
+      --bs-table-border-color: #334155;
+    }
+    .spotify-btn {
+      background-color: #1db954;
+      color: white;
+      font-weight: 600;
+      border-radius: 20px;
+      padding: 4px 12px;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    .spotify-btn:hover {
+      background-color: #1ed760;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark bg-dark border-bottom border-secondary mb-4">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">
+        🎧 OpenAudio • Spotify Availability Dashboard
+      </span>
+      <span class="text-secondary small" id="last-updated">Checking status...</span>
+    </div>
+  </nav>
+
+  <div class="container pb-5">
+    
+    <!-- Top Summary Stats -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-4">
+        <div class="stat-card">
+          <div class="text-secondary mb-1">Total Chapters Monitored</div>
+          <div class="number text-info" id="total-chapters">0</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="stat-card">
+          <div class="text-secondary mb-1">Online & Playable 🟢</div>
+          <div class="number text-success" id="online-chapters">0</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="stat-card">
+          <div class="text-secondary mb-1">Offline / Flagged 🔴</div>
+          <div class="number text-danger" id="offline-chapters">0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alert Banner (If Any Offline) -->
+    <div id="alert-banner" class="alert alert-danger d-none" role="alert">
+      <strong>🚨 Attention:</strong> <span id="alert-text">Some chapters are unplayable or taken down on Spotify!</span>
+    </div>
+
+    <!-- Search Input -->
+    <div class="mb-4">
+      <input type="text" id="search-input" class="form-control form-control-lg bg-dark text-white border-secondary" placeholder="🔍 Search chapter title, course, or status...">
+    </div>
+
+    <!-- Shows List Container -->
+    <div id="shows-container">
+      <div class="text-center py-5 text-secondary">
+        <div class="spinner-border text-primary mb-2" role="status"></div>
+        <p>Loading Spotify Status Audit...</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    async function loadStatus() {
+      try {
+        const res = await fetch('status.json');
+        if (!res.ok) throw new Error('status.json not found');
+        const data = await res.json();
+        
+        document.getElementById('last-updated').innerText = 'Last Audited: ' + new Date(data.last_updated).toLocaleString();
+        document.getElementById('total-chapters').innerText = data.total_chapters;
+        document.getElementById('online-chapters').innerText = data.online_chapters;
+        document.getElementById('offline-chapters').innerText = data.offline_chapters;
+
+        if (data.offline_chapters > 0) {
+          document.getElementById('alert-banner').classList.remove('d-none');
+          document.getElementById('alert-text').innerText = `${data.offline_chapters} chapter(s) are currently unplayable or flagged on Spotify!`;
+        }
+
+        renderShows(data.shows);
+
+        // Search Filter
+        document.getElementById('search-input').addEventListener('input', (e) => {
+          const query = e.target.value.toLowerCase();
+          filterShows(data.shows, query);
+        });
+
+      } catch (err) {
+        document.getElementById('shows-container').innerHTML = `
+          <div class="alert alert-warning text-center">
+            <h5>No Audit Data Available Yet</h5>
+            <p class="mb-0">The initial Spotify daily scan has not been triggered yet. Please run the scanner workflow on GitHub.</p>
+          </div>
+        `;
+      }
+    }
+
+    function renderShows(shows) {
+      const container = document.getElementById('shows-container');
+      container.innerHTML = '';
+
+      if (!shows || shows.length === 0) {
+        container.innerHTML = '<p class="text-secondary text-center">No shows configured yet.</p>';
+        return;
+      }
+
+      shows.forEach(show => {
+        const card = document.createElement('div');
+        card.className = 'show-section';
+        
+        let rowsHtml = '';
+        show.episodes.forEach(ep => {
+          const statusBadge = ep.is_playable 
+            ? '<span class="badge bg-success">Online 🟢</span>' 
+            : '<span class="badge bg-danger">Offline 🔴</span>';
+
+          const reasonText = ep.is_playable ? 'None' : `<span class="text-danger font-weight-bold">${ep.reason}</span>`;
+
+          rowsHtml += `
+            <tr class="episode-row" data-search="${ep.name.toLowerCase()} ${show.name.toLowerCase()} ${ep.is_playable ? 'online' : 'offline'}">
+              <td class="fw-bold">${ep.name}</td>
+              <td>${statusBadge}</td>
+              <td>${reasonText}</td>
+              <td class="text-end">
+                <a href="${ep.external_url}" target="_blank" class="spotify-btn">Listen on Spotify ↗</a>
+              </td>
+            </tr>
+          `;
+        });
+
+        card.innerHTML = `
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="m-0">${show.name}</h4>
+            <div>
+              <span class="badge bg-success me-1">${show.online} Online</span>
+              <span class="badge bg-danger">${show.offline} Offline</span>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-dark-custom align-middle">
+              <thead>
+                <tr>
+                  <th>Chapter Title</th>
+                  <th>Status</th>
+                  <th>Issue Details</th>
+                  <th class="text-end">Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${rowsHtml}
+              </tbody>
+            </table>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterShows(shows, query) {
+      document.querySelectorAll('.episode-row').forEach(row => {
+        const text = row.getAttribute('data-search');
+        if (text.includes(query)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    loadStatus();
+  </script>
+</body>
+</html>
