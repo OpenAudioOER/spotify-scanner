@@ -1,32 +1,14 @@
 [
   {
-    "name": "Show 1 (3mSx3d48h1o48QVWL7N2Q7)",
+    "name": "American Government 3e",
+    "rss_url": "REPLACE_WITH_RSS_FEED_URL_IF_AVAILABLE",
     "spotify_id": "3mSx3d48h1o48QVWL7N2Q7",
-    "type": "show"
-  },
-  {
-    "name": "Show 2 (7FkgIeSUtWQJcwuEMfWdcy)",
-    "spotify_id": "7FkgIeSUtWQJcwuEMfWdcy",
-    "type": "show"
-  },
-  {
-    "name": "Show 3 (0bs4fAkaHY00bV3NfvJRnX)",
-    "spotify_id": "0bs4fAkaHY00bV3NfvJRnX",
-    "type": "show"
-  },
-  {
-    "name": "Show 4 (2vNcGMI06MQvASLVj8LFpv)",
-    "spotify_id": "2vNcGMI06MQvASLVj8LFpv",
-    "type": "show"
-  },
-  {
-    "name": "Show 5 (2AxMbu2fx6empJwuP51mny)",
-    "spotify_id": "2AxMbu2fx6empJwuP51mny",
-    "type": "show"
-  },
-  {
-    "name": "Show 6 (4nsSYHJVY30ZukQ0nYFlYi)",
-    "spotify_id": "4nsSYHJVY30ZukQ0nYFlYi",
-    "type": "show"
+    "expected_episodes": [
+      {
+        "id": "ep01",
+        "title": "Chapter 1: Anchor Chapter Title",
+        "spotify_url": "https://open.spotify.com/episode/..."
+      }
+    ]
   }
 ]
