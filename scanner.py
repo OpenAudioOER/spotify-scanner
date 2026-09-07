@@ -167,13 +167,15 @@ def main():
             if is_online:
                 show_online_count += 1
                 status_output["total_online"] += 1
+                clean_reason = "Online"
             else:
                 show_offline_count += 1
                 status_output["total_offline"] += 1
+                clean_reason = reason
                 newly_offline.append({
                     "show_name": show_name,
                     "title": ep_title,
-                    "reason": reason,
+                    "reason": clean_reason,
                     "url": ep_url
                 })
 
@@ -182,7 +184,7 @@ def main():
                 "title": ep_title,
                 "url": ep_url,
                 "online": is_online,
-                "reason": reason
+                "reason": clean_reason
             })
 
             status_output["total_episodes"] += 1
