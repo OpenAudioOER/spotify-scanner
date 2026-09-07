@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import re
+import time
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone
@@ -10,13 +11,15 @@ SHOWS_FILE = "shows.json"
 STATUS_FILE = "status.json"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept-Language": "en-US,en;q=0.9"
 }
 
 def audit_spotify_episode(episode_id_or_url: str):
     """
-    Zero-API-key auditor for Spotify episodes.
-    Checks Spotify Embed status to detect 403 copyright claims and 404 deletions.
+    Auditor for Spotify episodes with rate-limit protection and exponential backoff.
+    Specifically checks for copyright takedowns ('Sorry, that's not currently available')
+    and 404 deletions ('Page not found').
     """
     if "episode/" in episode_id_or_url:
         episode_id = episode_id_or_url.split("episode/")[1].split("?")[0]
@@ -25,38 +28,50 @@ def audit_spotify_episode(episode_id_or_url: str):
 
     embed_url = f"https://open.spotify.com/embed/episode/{episode_id}"
 
-    try:
-        req = urllib.request.Request(embed_url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=12) as resp:
-            html = resp.read().decode("utf-8")
-            
-            # Extract Next.js data JSON payload
-            match = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', html)
-            if match:
-                data = json.loads(match.group(1))
-                page_props = data.get("props", {}).get("pageProps", {})
-                status = page_props.get("status")
-                title = page_props.get("title", "")
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            req = urllib.request.Request(embed_url, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=12) as resp:
+                html = resp.read().decode("utf-8")
+                
+                # Extract Next.js data JSON payload
+                match = re.search(r'<script id="__NEXT_DATA__" type="application/json">(.*?)</script>', html)
+                if match:
+                    data = json.loads(match.group(1))
+                    page_props = data.get("props", {}).get("pageProps", {})
+                    status = page_props.get("status")
+                    title = page_props.get("title", "")
 
-                if status == 403 or "not currently available" in title.lower():
+                    if status == 403 or "not currently available" in title.lower():
+                        return False, "403 Offline (Copyright / Legal Takedown)"
+                    elif status == 404 or "page not found" in title.lower():
+                        return False, "404 Not Found (Deleted / Removed)"
+                    elif status == 200:
+                        return True, "Online"
+
+                # Check HTML text for fallback error titles
+                if "not currently available" in html.lower():
                     return False, "403 Offline (Copyright / Legal Takedown)"
-                elif status == 404 or "page not found" in title.lower():
+                elif "page not found" in html.lower():
                     return False, "404 Not Found (Deleted / Removed)"
-                elif status == 200:
-                    return True, "Online"
-                else:
-                    return False, f"HTTP Status {status}"
 
-            return True, "Online"
-            
-    except urllib.error.HTTPError as e:
-        if e.code == 403:
-            return False, "403 Offline (Copyright Takedown)"
-        elif e.code == 404:
-            return False, "404 Not Found (Deleted)"
-        return False, f"HTTP Error {e.code}"
-    except Exception as e:
-        return False, f"Network Error: {e}"
+                return True, "Online"
+                
+        except urllib.error.HTTPError as e:
+            if e.code in [429, 403] and attempt < max_retries - 1:
+                # Rate limited or Cloud WAF challenge -> Wait and retry
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            elif e.code == 404:
+                return False, "404 Not Found (Deleted)"
+            return False, f"HTTP Error {e.code}"
+        except Exception as e:
+            if attempt < max_retries - 1:
+                time.sleep(1.0)
+                continue
+
+    return True, "Online"
 
 def send_resend_alert(api_key: str, to_email: str, from_email: str, newly_offline: list):
     """Sends an HTML alert email via Resend API using standard urllib."""
@@ -188,6 +203,9 @@ def main():
             })
 
             status_output["total_episodes"] += 1
+            
+            # Politeness delay to prevent cloud IP rate limiting
+            time.sleep(0.25)
 
         print(f"Summary for '{show_name}': {show_online_count} Online, {show_offline_count} Offline")
 
