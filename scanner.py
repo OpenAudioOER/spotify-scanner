@@ -40,14 +40,16 @@ def audit_spotify_episode(episode_id_or_url: str):
                 if match:
                     data = json.loads(match.group(1))
                     page_props = data.get("props", {}).get("pageProps", {})
+                    entity = page_props.get("state", {}).get("data", {}).get("entity")
                     status = page_props.get("status")
-                    title = page_props.get("title", "")
-
-                    if status == 403 or "not currently available" in title.lower():
+                    
+                    if status == 403 or (entity and "not currently available" in str(entity.get("title", "")).lower()):
                         return False, "403 Offline (Copyright / Legal Takedown)"
-                    elif status == 404 or "page not found" in title.lower():
+                    elif status == 404 or (entity and "page not found" in str(entity.get("title", "")).lower()):
                         return False, "404 Not Found (Deleted / Removed)"
-                    elif status == 200:
+                    elif entity and (entity.get("title") or entity.get("name")):
+                        return True, "Online"
+                    elif status == 200 and entity is not None:
                         return True, "Online"
 
                 # Check HTML text for fallback error titles
@@ -156,6 +158,9 @@ def main():
         "total_episodes": 0,
         "total_online": 0,
         "total_offline": 0,
+        "total_chapters": 0,
+        "online_chapters": 0,
+        "offline_chapters": 0,
         "shows": []
     }
 
@@ -182,10 +187,12 @@ def main():
             if is_online:
                 show_online_count += 1
                 status_output["total_online"] += 1
+                status_output["online_chapters"] += 1
                 clean_reason = "Online"
             else:
                 show_offline_count += 1
                 status_output["total_offline"] += 1
+                status_output["offline_chapters"] += 1
                 clean_reason = reason
                 newly_offline.append({
                     "show_name": show_name,
@@ -196,13 +203,17 @@ def main():
 
             audited_episodes.append({
                 "id": ep_id,
+                "name": ep_title,
                 "title": ep_title,
                 "url": ep_url,
+                "external_url": ep_url,
                 "online": is_online,
+                "is_playable": is_online,
                 "reason": clean_reason
             })
 
             status_output["total_episodes"] += 1
+            status_output["total_chapters"] += 1
             
             # Politeness delay to prevent cloud IP rate limiting
             time.sleep(0.25)
