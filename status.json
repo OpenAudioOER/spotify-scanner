@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-09-17T18:00:25.857911+00:00",
+  "last_updated": "2026-09-18T17:34:53.737181+00:00",
   "total_shows": 6,
   "total_episodes": 119,
-  "total_online": 118,
-  "total_offline": 1,
+  "total_online": 119,
+  "total_offline": 0,
   "total_chapters": 119,
-  "online_chapters": 118,
-  "offline_chapters": 1,
+  "online_chapters": 119,
+  "offline_chapters": 0,
   "shows": [
     {
       "name": "American Government 3e",
@@ -189,8 +189,8 @@
     {
       "name": "American Government 4e",
       "total": 17,
-      "online": 16,
-      "offline": 1,
+      "online": 17,
+      "offline": 0,
       "episodes": [
         {
           "id": "7gXcSWYXDDiJF5I7EuC2Py",
@@ -348,9 +348,9 @@
           "title": "Chapter 16: Domestic Policy",
           "url": "https://open.spotify.com/episode/196aMPqhDDrg1eDpSm07F4",
           "external_url": "https://open.spotify.com/episode/196aMPqhDDrg1eDpSm07F4",
-          "online": false,
-          "is_playable": false,
-          "reason": "HTTP Error 504"
+          "online": true,
+          "is_playable": true,
+          "reason": "Online"
         },
         {
           "id": "2kszz4fqm8LTNMEW4HEWvP",
