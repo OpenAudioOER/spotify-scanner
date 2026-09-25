@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-09-24T18:19:10.537231+00:00",
+  "last_updated": "2026-09-25T18:19:07.004877+00:00",
   "total_shows": 6,
   "total_episodes": 119,
-  "total_online": 119,
-  "total_offline": 0,
+  "total_online": 118,
+  "total_offline": 1,
   "total_chapters": 119,
-  "online_chapters": 119,
-  "offline_chapters": 0,
+  "online_chapters": 118,
+  "offline_chapters": 1,
   "shows": [
     {
       "name": "American Government 3e",
@@ -367,8 +367,8 @@
     {
       "name": "Introduction to Sociology 3e",
       "total": 21,
-      "online": 21,
-      "offline": 0,
+      "online": 20,
+      "offline": 1,
       "episodes": [
         {
           "id": "2agJEPRBvQhu1E0XzQvnMH",
@@ -526,9 +526,9 @@
           "title": "Chapter 16: Education",
           "url": "https://open.spotify.com/episode/1C5LOhntz5Wm2gaMtbMVfT",
           "external_url": "https://open.spotify.com/episode/1C5LOhntz5Wm2gaMtbMVfT",
-          "online": true,
-          "is_playable": true,
-          "reason": "Online"
+          "online": false,
+          "is_playable": false,
+          "reason": "HTTP Error 504"
         },
         {
           "id": "4uVGib2YWwJ40XysJaGuSL",
