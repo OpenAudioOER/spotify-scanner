@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-10-01T19:19:50.478285+00:00",
+  "last_updated": "2026-10-02T19:02:48.118367+00:00",
   "total_shows": 6,
   "total_episodes": 119,
-  "total_online": 119,
-  "total_offline": 0,
+  "total_online": 118,
+  "total_offline": 1,
   "total_chapters": 119,
-  "online_chapters": 119,
-  "offline_chapters": 0,
+  "online_chapters": 118,
+  "offline_chapters": 1,
   "shows": [
     {
       "name": "American Government 3e",
@@ -367,8 +367,8 @@
     {
       "name": "Introduction to Sociology 3e",
       "total": 21,
-      "online": 21,
-      "offline": 0,
+      "online": 20,
+      "offline": 1,
       "episodes": [
         {
           "id": "2agJEPRBvQhu1E0XzQvnMH",
@@ -386,9 +386,9 @@
           "title": "Chapter 2: Sociological Research",
           "url": "https://open.spotify.com/episode/5CnwkVzUkG86yZGg6R95gd",
           "external_url": "https://open.spotify.com/episode/5CnwkVzUkG86yZGg6R95gd",
-          "online": true,
-          "is_playable": true,
-          "reason": "Online"
+          "online": false,
+          "is_playable": false,
+          "reason": "HTTP Error 504"
         },
         {
           "id": "14VfXq8qfhOnnRIq1Tjb3y",
