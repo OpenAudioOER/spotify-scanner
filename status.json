@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-02T19:02:48.118367+00:00",
+  "last_updated": "2026-10-03T17:50:13.191158+00:00",
   "total_shows": 6,
   "total_episodes": 119,
   "total_online": 118,
@@ -386,9 +386,9 @@
           "title": "Chapter 2: Sociological Research",
           "url": "https://open.spotify.com/episode/5CnwkVzUkG86yZGg6R95gd",
           "external_url": "https://open.spotify.com/episode/5CnwkVzUkG86yZGg6R95gd",
-          "online": false,
-          "is_playable": false,
-          "reason": "HTTP Error 504"
+          "online": true,
+          "is_playable": true,
+          "reason": "Online"
         },
         {
           "id": "14VfXq8qfhOnnRIq1Tjb3y",
@@ -516,9 +516,9 @@
           "title": "Chapter 15: Religion",
           "url": "https://open.spotify.com/episode/6loL8SLkeDy1K9kqub6M4S",
           "external_url": "https://open.spotify.com/episode/6loL8SLkeDy1K9kqub6M4S",
-          "online": true,
-          "is_playable": true,
-          "reason": "Online"
+          "online": false,
+          "is_playable": false,
+          "reason": "HTTP Error 504"
         },
         {
           "id": "1C5LOhntz5Wm2gaMtbMVfT",
