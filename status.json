@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-10-07T19:47:43.262195+00:00",
+  "last_updated": "2026-10-08T19:42:58.422008+00:00",
   "total_shows": 6,
   "total_episodes": 119,
-  "total_online": 118,
-  "total_offline": 1,
+  "total_online": 119,
+  "total_offline": 0,
   "total_chapters": 119,
-  "online_chapters": 118,
-  "offline_chapters": 1,
+  "online_chapters": 119,
+  "offline_chapters": 0,
   "shows": [
     {
       "name": "American Government 3e",
@@ -367,8 +367,8 @@
     {
       "name": "Introduction to Sociology 3e",
       "total": 21,
-      "online": 20,
-      "offline": 1,
+      "online": 21,
+      "offline": 0,
       "episodes": [
         {
           "id": "2agJEPRBvQhu1E0XzQvnMH",
@@ -506,9 +506,9 @@
           "title": "Chapter 14: Marriage and Family",
           "url": "https://open.spotify.com/episode/0aKSW83oLPQ42Fb53oUBZw",
           "external_url": "https://open.spotify.com/episode/0aKSW83oLPQ42Fb53oUBZw",
-          "online": false,
-          "is_playable": false,
-          "reason": "HTTP Error 504"
+          "online": true,
+          "is_playable": true,
+          "reason": "Online"
         },
         {
           "id": "6loL8SLkeDy1K9kqub6M4S",
