@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-10-11T18:41:31.883040+00:00",
+  "last_updated": "2026-10-12T22:00:08.361323+00:00",
   "total_shows": 6,
   "total_episodes": 119,
-  "total_online": 119,
-  "total_offline": 0,
+  "total_online": 118,
+  "total_offline": 1,
   "total_chapters": 119,
-  "online_chapters": 119,
-  "offline_chapters": 0,
+  "online_chapters": 118,
+  "offline_chapters": 1,
   "shows": [
     {
       "name": "American Government 3e",
@@ -585,8 +585,8 @@
     {
       "name": "US History",
       "total": 32,
-      "online": 32,
-      "offline": 0,
+      "online": 31,
+      "offline": 1,
       "episodes": [
         {
           "id": "57CS8zEcpKrSR9obXUF4ME",
@@ -844,9 +844,9 @@
           "title": "Chapter 26: Brother, Can You Spare a Dime? The Great Depression, 1929-1932",
           "url": "https://open.spotify.com/episode/3iSpGu2vsEtqikK7Z6GxtW",
           "external_url": "https://open.spotify.com/episode/3iSpGu2vsEtqikK7Z6GxtW",
-          "online": true,
-          "is_playable": true,
-          "reason": "Online"
+          "online": false,
+          "is_playable": false,
+          "reason": "HTTP Error 504"
         },
         {
           "id": "1iig31nQiGp8E3z2U4X6TT",
