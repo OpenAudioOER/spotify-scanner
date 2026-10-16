@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-10-15T18:05:24.646228+00:00",
+  "last_updated": "2026-10-16T17:51:03.276679+00:00",
   "total_shows": 6,
   "total_episodes": 119,
-  "total_online": 119,
-  "total_offline": 0,
+  "total_online": 117,
+  "total_offline": 2,
   "total_chapters": 119,
-  "online_chapters": 119,
-  "offline_chapters": 0,
+  "online_chapters": 117,
+  "offline_chapters": 2,
   "shows": [
     {
       "name": "American Government 3e",
       "total": 17,
-      "online": 17,
-      "offline": 0,
+      "online": 15,
+      "offline": 2,
       "episodes": [
         {
           "id": "3Nbuw8ZeBoS8Dq8lGvbj4p",
@@ -90,9 +90,9 @@
           "title": "Chapter 8: The Media",
           "url": "https://open.spotify.com/episode/4ZJTCy1NQlNlmoSanXB2Hr",
           "external_url": "https://open.spotify.com/episode/4ZJTCy1NQlNlmoSanXB2Hr",
-          "online": true,
-          "is_playable": true,
-          "reason": "Online"
+          "online": false,
+          "is_playable": false,
+          "reason": "HTTP Error 504"
         },
         {
           "id": "02ShiQenjI96P5ONjw4QmJ",
@@ -120,9 +120,9 @@
           "title": "Chapter 11: Congress",
           "url": "https://open.spotify.com/episode/7u36Wip1F2CWS3m3mRKRjF",
           "external_url": "https://open.spotify.com/episode/7u36Wip1F2CWS3m3mRKRjF",
-          "online": true,
-          "is_playable": true,
-          "reason": "Online"
+          "online": false,
+          "is_playable": false,
+          "reason": "HTTP Error 504"
         },
         {
           "id": "5j4Tho7gi1EKhIy9RPtObQ",
