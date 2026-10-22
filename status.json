@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-10-21T18:29:11.466554+00:00",
+  "last_updated": "2026-10-22T18:24:32.419416+00:00",
   "total_shows": 6,
   "total_episodes": 119,
-  "total_online": 118,
-  "total_offline": 1,
+  "total_online": 119,
+  "total_offline": 0,
   "total_chapters": 119,
-  "online_chapters": 118,
-  "offline_chapters": 1,
+  "online_chapters": 119,
+  "offline_chapters": 0,
   "shows": [
     {
       "name": "American Government 3e",
@@ -585,8 +585,8 @@
     {
       "name": "US History",
       "total": 32,
-      "online": 31,
-      "offline": 1,
+      "online": 32,
+      "offline": 0,
       "episodes": [
         {
           "id": "57CS8zEcpKrSR9obXUF4ME",
@@ -744,9 +744,9 @@
           "title": "Chapter 16: The Civil War, 1861-1865",
           "url": "https://open.spotify.com/episode/6hMcXO40wifgqestdhh7tx",
           "external_url": "https://open.spotify.com/episode/6hMcXO40wifgqestdhh7tx",
-          "online": false,
-          "is_playable": false,
-          "reason": "HTTP Error 504"
+          "online": true,
+          "is_playable": true,
+          "reason": "Online"
         },
         {
           "id": "45muHnK86CIbEzxpYhH7VN",
