@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-10-25T17:28:56.651715+00:00",
+  "last_updated": "2026-10-26T19:47:05.788666+00:00",
   "total_shows": 6,
   "total_episodes": 119,
-  "total_online": 119,
-  "total_offline": 0,
+  "total_online": 116,
+  "total_offline": 3,
   "total_chapters": 119,
-  "online_chapters": 119,
-  "offline_chapters": 0,
+  "online_chapters": 116,
+  "offline_chapters": 3,
   "shows": [
     {
       "name": "American Government 3e",
@@ -585,8 +585,8 @@
     {
       "name": "US History",
       "total": 32,
-      "online": 32,
-      "offline": 0,
+      "online": 31,
+      "offline": 1,
       "episodes": [
         {
           "id": "57CS8zEcpKrSR9obXUF4ME",
@@ -764,9 +764,9 @@
           "title": "Chapter 18: Go West Young Man! Westward Expansion, 1840-1900",
           "url": "https://open.spotify.com/episode/0u6OsUKd7Yeaatw2rb0S5O",
           "external_url": "https://open.spotify.com/episode/0u6OsUKd7Yeaatw2rb0S5O",
-          "online": true,
-          "is_playable": true,
-          "reason": "Online"
+          "online": false,
+          "is_playable": false,
+          "reason": "HTTP Error 504"
         },
         {
           "id": "5yAFuqTcBGAFTZ0Q4q1R6V",
@@ -1071,8 +1071,8 @@
     {
       "name": "Introduction to Business 2e",
       "total": 17,
-      "online": 17,
-      "offline": 0,
+      "online": 15,
+      "offline": 2,
       "episodes": [
         {
           "id": "7HOiM3L5he2hcgFav70Zqi",
@@ -1100,9 +1100,9 @@
           "title": "Chapter 3: Competing in the Global Marketplace",
           "url": "https://open.spotify.com/episode/0Usfmoxi3a3xJXdMVLgSb5",
           "external_url": "https://open.spotify.com/episode/0Usfmoxi3a3xJXdMVLgSb5",
-          "online": true,
-          "is_playable": true,
-          "reason": "Online"
+          "online": false,
+          "is_playable": false,
+          "reason": "HTTP Error 504"
         },
         {
           "id": "1Vl36wUSMfFVdgevkT4yy8",
@@ -1190,9 +1190,9 @@
           "title": "Chapter 12: Distributing and Promoting Products",
           "url": "https://open.spotify.com/episode/6dlb7FBkk9qbYb1YNwUzax",
           "external_url": "https://open.spotify.com/episode/6dlb7FBkk9qbYb1YNwUzax",
-          "online": true,
-          "is_playable": true,
-          "reason": "Online"
+          "online": false,
+          "is_playable": false,
+          "reason": "HTTP Error 504"
         },
         {
           "id": "74FAxJklEd8Bj1wSvRFOWg",
