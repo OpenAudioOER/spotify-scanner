@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-10-31T18:19:59.119652+00:00",
+  "last_updated": "2026-11-01T18:47:27.879024+00:00",
   "total_shows": 6,
   "total_episodes": 119,
-  "total_online": 117,
-  "total_offline": 2,
+  "total_online": 118,
+  "total_offline": 1,
   "total_chapters": 119,
-  "online_chapters": 117,
-  "offline_chapters": 2,
+  "online_chapters": 118,
+  "offline_chapters": 1,
   "shows": [
     {
       "name": "American Government 3e",
       "total": 17,
-      "online": 17,
-      "offline": 0,
+      "online": 16,
+      "offline": 1,
       "episodes": [
         {
           "id": "3Nbuw8ZeBoS8Dq8lGvbj4p",
@@ -50,9 +50,9 @@
           "title": "Chapter 4: Civil Liberties",
           "url": "https://open.spotify.com/episode/4Z21MMTezh3X4EMhDfETje",
           "external_url": "https://open.spotify.com/episode/4Z21MMTezh3X4EMhDfETje",
-          "online": true,
-          "is_playable": true,
-          "reason": "Online"
+          "online": false,
+          "is_playable": false,
+          "reason": "HTTP Error 504"
         },
         {
           "id": "1aORzvdyPcTPflaRU45Chr",
@@ -585,8 +585,8 @@
     {
       "name": "US History",
       "total": 32,
-      "online": 31,
-      "offline": 1,
+      "online": 32,
+      "offline": 0,
       "episodes": [
         {
           "id": "57CS8zEcpKrSR9obXUF4ME",
@@ -724,9 +724,9 @@
           "title": "Chapter 14: Westward Expansion and the Mexican-American War, 1830-1848",
           "url": "https://open.spotify.com/episode/2VqV4lF1DpwlzrlJw2w4BE",
           "external_url": "https://open.spotify.com/episode/2VqV4lF1DpwlzrlJw2w4BE",
-          "online": false,
-          "is_playable": false,
-          "reason": "HTTP Error 504"
+          "online": true,
+          "is_playable": true,
+          "reason": "Online"
         },
         {
           "id": "3DMvzCkIf1BtWL9jLjoV3r",
@@ -1071,8 +1071,8 @@
     {
       "name": "Introduction to Business 2e",
       "total": 17,
-      "online": 16,
-      "offline": 1,
+      "online": 17,
+      "offline": 0,
       "episodes": [
         {
           "id": "7HOiM3L5he2hcgFav70Zqi",
@@ -1240,9 +1240,9 @@
           "title": "Chapter 17: Your Career in Business",
           "url": "https://open.spotify.com/episode/1TosTNrjzQSQodD8aTY6w5",
           "external_url": "https://open.spotify.com/episode/1TosTNrjzQSQodD8aTY6w5",
-          "online": false,
-          "is_playable": false,
-          "reason": "HTTP Error 504"
+          "online": true,
+          "is_playable": true,
+          "reason": "Online"
         }
       ]
     }
