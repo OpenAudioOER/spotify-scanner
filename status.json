@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-11-05T20:57:16.944947+00:00",
+  "last_updated": "2026-11-06T20:17:53.264151+00:00",
   "total_shows": 6,
   "total_episodes": 119,
-  "total_online": 119,
-  "total_offline": 0,
+  "total_online": 118,
+  "total_offline": 1,
   "total_chapters": 119,
-  "online_chapters": 119,
-  "offline_chapters": 0,
+  "online_chapters": 118,
+  "offline_chapters": 1,
   "shows": [
     {
       "name": "American Government 3e",
       "total": 17,
-      "online": 17,
-      "offline": 0,
+      "online": 16,
+      "offline": 1,
       "episodes": [
         {
           "id": "3Nbuw8ZeBoS8Dq8lGvbj4p",
@@ -150,9 +150,9 @@
           "title": "Chapter 14: State and Local Government",
           "url": "https://open.spotify.com/episode/1aSQxcCHUzPPJM768mT5o3",
           "external_url": "https://open.spotify.com/episode/1aSQxcCHUzPPJM768mT5o3",
-          "online": true,
-          "is_playable": true,
-          "reason": "Online"
+          "online": false,
+          "is_playable": false,
+          "reason": "HTTP Error 504"
         },
         {
           "id": "6EG8JTBs2NuTJQxF3jkobm",
