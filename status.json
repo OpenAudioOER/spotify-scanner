@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-06T20:17:53.264151+00:00",
+  "last_updated": "2026-11-07T18:30:21.841654+00:00",
   "total_shows": 6,
   "total_episodes": 119,
   "total_online": 118,
@@ -11,8 +11,8 @@
     {
       "name": "American Government 3e",
       "total": 17,
-      "online": 16,
-      "offline": 1,
+      "online": 17,
+      "offline": 0,
       "episodes": [
         {
           "id": "3Nbuw8ZeBoS8Dq8lGvbj4p",
@@ -150,9 +150,9 @@
           "title": "Chapter 14: State and Local Government",
           "url": "https://open.spotify.com/episode/1aSQxcCHUzPPJM768mT5o3",
           "external_url": "https://open.spotify.com/episode/1aSQxcCHUzPPJM768mT5o3",
-          "online": false,
-          "is_playable": false,
-          "reason": "HTTP Error 504"
+          "online": true,
+          "is_playable": true,
+          "reason": "Online"
         },
         {
           "id": "6EG8JTBs2NuTJQxF3jkobm",
@@ -913,8 +913,8 @@
     {
       "name": "World History, Vol. 1",
       "total": 15,
-      "online": 15,
-      "offline": 0,
+      "online": 14,
+      "offline": 1,
       "episodes": [
         {
           "id": "5CNYVS5FEXbbsm2QLtzBbR",
@@ -1062,9 +1062,9 @@
           "title": "Chapter 15: The Transregional World to 1500",
           "url": "https://open.spotify.com/episode/01x1tDqmX53qkpzlSqyrak",
           "external_url": "https://open.spotify.com/episode/01x1tDqmX53qkpzlSqyrak",
-          "online": true,
-          "is_playable": true,
-          "reason": "Online"
+          "online": false,
+          "is_playable": false,
+          "reason": "HTTP Error 504"
         }
       ]
     },
