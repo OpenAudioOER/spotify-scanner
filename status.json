@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-11-07T18:30:21.841654+00:00",
+  "last_updated": "2026-11-08T18:42:04.478929+00:00",
   "total_shows": 6,
   "total_episodes": 119,
-  "total_online": 118,
-  "total_offline": 1,
+  "total_online": 119,
+  "total_offline": 0,
   "total_chapters": 119,
-  "online_chapters": 118,
-  "offline_chapters": 1,
+  "online_chapters": 119,
+  "offline_chapters": 0,
   "shows": [
     {
       "name": "American Government 3e",
@@ -913,8 +913,8 @@
     {
       "name": "World History, Vol. 1",
       "total": 15,
-      "online": 14,
-      "offline": 1,
+      "online": 15,
+      "offline": 0,
       "episodes": [
         {
           "id": "5CNYVS5FEXbbsm2QLtzBbR",
@@ -1062,9 +1062,9 @@
           "title": "Chapter 15: The Transregional World to 1500",
           "url": "https://open.spotify.com/episode/01x1tDqmX53qkpzlSqyrak",
           "external_url": "https://open.spotify.com/episode/01x1tDqmX53qkpzlSqyrak",
-          "online": false,
-          "is_playable": false,
-          "reason": "HTTP Error 504"
+          "online": true,
+          "is_playable": true,
+          "reason": "Online"
         }
       ]
     },
